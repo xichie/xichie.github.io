@@ -102,4 +102,8 @@ deploy:
   repo: 'https://github.com/xichie/xichie.github.io'
   branch: 'master'
 #设置支持数学公式  
-mathjax: true   
+mathjax: true  
+# 自动分类
+auto_category:
+ enable: true
+ depth:
