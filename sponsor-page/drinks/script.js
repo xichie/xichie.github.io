@@ -19,7 +19,7 @@ var qrcodes = {
     'btc_donate'	:	'##',	// 二维码路径
     'alipay_donate'	:	'../simple/images/AliPayQR.jpg',	// 支付宝二维码
     'alipay_donate_link'   :   'HTTPS://QR.ALIPAY.COM/FKX05633ROXF6STCJGUNC8',   // 支付宝二维码上的链接，必须换成自己的连接！！！手机点击会自动跳转到支付宝。
-    'wechat_donate'	:	'../simple/images/WeChanSQ.jpg'
+    'wechat_donate'	:	'../simple/images/WeChatQR.jpg'
 };
 
 var drinks_an = new Object();
