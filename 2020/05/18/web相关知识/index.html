@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>web相关知识 | warm</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 4.2.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">web相关知识</h1><a id="logo" href="/.">warm</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">web相关知识</h1><div class="post-meta">2020-05-18</div><div class="post-content"><h4 id="servlet生命周期"><a href="#servlet生命周期" class="headerlink" title="servlet生命周期"></a>servlet生命周期</h4><p>&#8195; &#8195;<strong>servelt是一个单实例多线程的动态web技术。</strong> 默认情况下，第一次访问时调用init方法初始化。每当接受一个请求，就创建一个线程，并调用对应的service方法。最后，当此servlet被移除或者服务器正常关闭的时候，调用用destroy方法销毁。</p>
+<h4 id="session生命周期"><a href="#session生命周期" class="headerlink" title="session生命周期"></a>session生命周期</h4><p>当服务器启动，第一次调用getSeesion方法时，session创建。<br>session销毁的方式：</p>
+<ul>
+<li>seesion有默认的销毁时间，在web.xml中配置。</li>
+<li>非正常原因关闭服务器。（正常关闭服务器，session不会销毁，会序列化到磁盘上）  </li>
+<li>调用invalidate()方法销毁。</li>
+</ul>
+<h4 id="重定向和请求转发的区别："><a href="#重定向和请求转发的区别：" class="headerlink" title="重定向和请求转发的区别："></a>重定向和请求转发的区别：</h4><h6 id="重定向："><a href="#重定向：" class="headerlink" title="重定向："></a>重定向：</h6><p>两次请求，可以访问外部资源，路径要加项目名。<br>状态码：302<br>响应头：location：url （url必须加项目名）</p>
+<h6 id="请求转发："><a href="#请求转发：" class="headerlink" title="请求转发："></a>请求转发：</h6><p>一次请求，只能访问内部资源，路径不能添加项目名。★</p>
+<h6 id="会话技术"><a href="#会话技术" class="headerlink" title="会话技术"></a>会话技术</h6><p>会话：它是一个过程，针对的是每个用户。打开浏览器，发送多次请求，得到多次响应，该过程叫做会话。<br>会话可以简单的分为：<strong>Cookie(基于客户端的技术)、Session(基于服务器端的技术)</strong></p>
+<h6 id="Cookie技术："><a href="#Cookie技术：" class="headerlink" title="Cookie技术："></a>Cookie技术：</h6><p>流程：</p>
+<ol>
+<li>浏览器端第一次向服务器发送请求</li>
+<li>在服务端创建Cookie：Cookie c = new Cookie(key,  value)</li>
+<li>通过response对象的addCookie方法，将服务器创建Cookie回写给浏览器端，并在浏览器端保存。响应头为set-cookie：key=value</li>
+<li>当浏览器向服务器发送第二次请求时，请求头中包含cookie：key=value</li>
+<li>服务器接受请求后，通过request.getCookies()获取Cookie对象，继续操作Cookie对象，并回写Cookie</li>
+<li>默认情况下，当浏览器关闭后，Cookie会被清除。可以通过setMaxAge方法设置Cookie在浏览器端保存的时间。<h6 id="session技术："><a href="#session技术：" class="headerlink" title="session技术："></a>session技术：</h6>流程：</li>
+<li>当浏览器第一次访问服务器，会在服务器端创建一个session空间，可以在空间中存取一些值。获得该空间的唯一标识jsessionid，并将jsessionid回写给浏览器set-cookie：jsessionid=value。</li>
+<li>浏览器第二次访问服务器时，在请求头中会有jsessionid=value，然后通过它来访问自己的seesion空间。<h5 id="Ajax异步请求"><a href="#Ajax异步请求" class="headerlink" title="Ajax异步请求"></a>Ajax异步请求</h5>异步请求：就是只提交页面的一部分数据和服务器交互，局部刷新页面。如果服务器没有相应，也不会影响页面上的其它操作。<br><strong>———————————————— 了解内容—————————————————</strong><br>js提供了一个XMLHttpRequest对象来实现异步的请求。具体的步骤如下：</li>
+</ol>
+<ul>
+<li>创建XMLHttpReques对象xhr。</li>
+<li>连接资源。使用open(url)方法。</li>
+<li>设置请求的参数。send()方法。如send(“username=”+tom+”&amp;password=”+123）</li>
+<li>使用onreadystatechange时间监听xhr对象状态的改变。若xhr.readyState==4且判状态码xhr.status 为200。</li>
+<li>获取服务器响应的内容。xhr.responseText；<br><strong>—————————————— 了解内容—————————————————</strong></li>
+</ul>
+<h5 id="使用jQuery对象实现异步请求："><a href="#使用jQuery对象实现异步请求：" class="headerlink" title="使用jQuery对象实现异步请求："></a>使用jQuery对象实现异步请求：</h5><p><strong>jQuery对象</strong></p>
+<p>DOM对象转换为jQuery对象：$(dom对象)<br>jQuery对象转换为DOM对象：<br>—————jQuery对象是一个数组对象。可以通过下标或者get(index)方法获取dom对象<br>DOM对象和JQuery对象的对比：<br>如果ID值不存在, DOM对象会报错，jQuery对象不会。</p>
+<p><strong>jQuery中的Ajax</strong></p>
+<p> 常用的方法：</p>
+<ul>
+<li>对象.load(url, data, callback(data, textStatus, XMLHttpRequest ))</li>
+<li>$.get(url, data, callback, type)</li>
+<li>$.post(url, data, callback, type)</li>
+<li>$.ajax()<br>其中：<br>  url：请求的资源路径<br>  data：请求的参数<br>  callback：回调函数，得到响应后的处理方式<br>  type: 返回内容的格式。如：html, script, json, text, xml<br>  ————data：响应的内容<br>  ————textStatus: 请求的状态<br>  ————XMLHttpRequest : 底层对象</li>
+</ul>
+</div><div class="tags"></div><div class="post-nav"><a class="next" href="/2020/05/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/">计算机网络笔记</a></div><div id="lv-container" data-id="city" data-uid="MTAyMC80MzQ2MS8yMDAwMQ=="><script>(function(d, s) {
+   var j, e = d.getElementsByTagName(s)[0];
+   if (typeof LivereTower === 'function') { return; }
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+   e.parentNode.insertBefore(j, e);
+})(document, 'script');
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://yoursite.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: 15px;">计算机基础</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/05/18/web%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/">web相关知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/05/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%AC%94%E8%AE%B0/">计算机网络笔记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">warm.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
