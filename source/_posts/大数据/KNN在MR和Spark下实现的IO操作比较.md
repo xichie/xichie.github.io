@@ -7,6 +7,7 @@ comments: true
 mathjax: true
 categories:
   - 大数据
+abbrlink: 775bc24d
 date: 2020-05-18 17:17:43
 ---
 MapReduce中KNN运行过程I/O操作分析：

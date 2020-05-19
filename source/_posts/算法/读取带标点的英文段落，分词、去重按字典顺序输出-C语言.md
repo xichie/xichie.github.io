@@ -10,6 +10,7 @@ tags:
 description: PAT算法题练习
 categories:
   - 算法
+abbrlink: bcf8358e
 date: 2020-05-18 15:35:03
 ---
 例如：

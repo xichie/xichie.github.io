@@ -15,7 +15,12 @@ timezone: 'Asia/Shanghai'
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://xichie.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title/
+# 设置文章永久链接
+permalink: article/:abbrlink.html  # article是自定义的前缀
+abbrlink:
+    alg: crc32   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -100,8 +105,11 @@ theme: maupassant
 # Deployment 部署到github设置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: 'git'
+- type: 'git'
   repository: 'git@49.233.34.244:/var/repo/blog.git'
+  branch: 'master'
+- type: 'git'
+  repository: 'git@github.com:xichie/xichie.github.io.git'
   branch: 'master'
 #设置支持数学公式  
 mathjax: true  

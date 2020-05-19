@@ -7,6 +7,7 @@ comments: true
 mathjax: true
 categories:
   - 大数据
+abbrlink: 8e63b6f8
 date: 2020-05-18 17:20:51
 ---
 前几天用mrunit进行单元测试，一直报错：java.lang.IncompatibleClassChangeError: Found interface org.apache.hadoop.mapreduce.TaskInputOutputContext, but class was expected

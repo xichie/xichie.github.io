@@ -7,6 +7,7 @@ comments: true
 mathjax: true
 categories:
   - 机器学习
+abbrlink: a27dd3ed
 date: 2020-05-18 17:18:40
 ---
 最近学习卷积网络用到cifar10数据集，自己写了一个工具类，用来读取已经下载到本地的cifar10数据集。

@@ -7,6 +7,7 @@ comments: true
 mathjax: true
 categories:
   - 大数据
+abbrlink: 88713ffb
 date: 2020-05-18 17:06:58
 ---
 **首先环境为：**
