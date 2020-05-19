@@ -9,11 +9,11 @@ description: ''
 keywords:
 author: warm
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://xichie.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -29,7 +29,9 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
+# 指定文件或文件夹跳过渲染
 skip_render:
+  - about/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -99,7 +101,7 @@ theme: maupassant
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
-  repo: 'https://github.com/xichie/xichie.github.io'
+  repository: 'git@49.233.34.244:/var/repo/blog.git'
   branch: 'master'
 #设置支持数学公式  
 mathjax: true  
@@ -107,3 +109,10 @@ mathjax: true
 auto_category:
  enable: true
  depth:
+ 
+# hexo-admin 配置用户名，密码，密钥，文章发布的脚本文件
+admin:
+  username: 996543486@qq.com
+  password_hash: $2a$10$oPNzqmeb5MGk8JJLkMJlT.ncZPXUHzG38ItxO8Th3jCJdXbJqVDiC
+  secret: my super secret phrase
+  deployCommand: 'hexo-pubish.bat'
