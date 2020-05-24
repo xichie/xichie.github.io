@@ -1,1 +1,1 @@
-hexo d -g & git add . & git commit -m 'update artical' & git push
+hexo d -g & git add . &  git commit -m 'update artical'  &  git push

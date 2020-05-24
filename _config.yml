@@ -111,6 +111,9 @@ deploy:
 - type: 'git'
   repository: 'git@github.com:xichie/xichie.github.io.git'
   branch: 'master'
+- type: 'git'
+  repository: 'git@github.com:xichie/xichie.github.io.git'
+  branch: 'hexo'
 #设置支持数学公式  
 mathjax: true  
 # 自动分类
