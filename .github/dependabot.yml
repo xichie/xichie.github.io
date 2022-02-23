@@ -14,7 +14,7 @@ updates:
       interval: "daily"
 
   # Enable version updates for Docker
-  - package-ecosystem: "Hex"
+  - package-ecosystem: "mix"
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
     # Check for updates once a week
