@@ -105,15 +105,12 @@ theme: maupassant
 # Deployment 部署到github设置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-# - type: 'git'
-#   repository: 'ssh://git@49.233.34.244:/var/repo/blog.git'
-#   branch: 'master'
 - type: 'git'
   repository: 'git@github.com:xichie/xichie.github.io.git'
   branch: 'master'
-- type: 'git'
-  repository: 'git@github.com:xichie/xichie.github.io.git'
-  branch: 'hexo'
+# - type: 'git'
+#   repository: 'git@github.com:xichie/xichie.github.io.git'
+#   branch: 'hexo'
 #设置支持数学公式  
 mathjax: true  
 # 自动分类
