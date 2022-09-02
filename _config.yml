@@ -4,7 +4,7 @@
 
 # Site
 title: warm
-subtitle: ''
+subtitle: '学习空间'
 description: ''
 keywords:
 author: warm
@@ -49,14 +49,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight: # 代码高亮设置
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -128,3 +128,8 @@ admin:
   password_hash: $2a$10$oPNzqmeb5MGk8JJLkMJlT.ncZPXUHzG38ItxO8Th3jCJdXbJqVDiC
   secret: my super secret phrase
   deployCommand: 'hexo-pubish.bat'
+
+# 中文链接转拼音
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
