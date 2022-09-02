@@ -40,7 +40,7 @@ https://img-blog.csdn.net/20180722175404387?watermark/2/text/aHR0cHM6Ly9ibG9nLmN
 
 输出层10个节点，没有激活函数
 
-```
+```python
 def inference(self, input_tensor):
         with tf.variable_scope("layer1-conv1"):
             conv1_weight = tf.get_variable(name = "conv1_variable", shape=[5,5,1,6], initializer=tf.truncated_normal_initializer())
@@ -72,7 +72,7 @@ def inference(self, input_tensor):
 在模型训练的过程中出现了一些问题，开始我为了让初始化的权值尽量都小一些，让每一层的卷积核的权重初始化时都乘以0.01，但是发现如果这么做损失函数收敛的很慢甚至都不会收敛。刚开始的时候我以为是我代码有问题，那个费劲的找bug啊！都是泪。我原来一直认为神经网络权值初始化时应该尽量小一些，看来也不是这样的。经过了千辛万苦模型终于训练好了。
 
 最终在训练集、测试集、验证集上的精度如下：
-```
+```python
 if __name__ == "__main__":
     model = LeNet5()
     # model.train(iter_num=200)

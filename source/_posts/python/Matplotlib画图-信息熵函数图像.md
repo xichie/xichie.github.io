@@ -22,7 +22,7 @@ $E = -p_1 * log_2p_1 - p_2 * log_2p_2 - (1 - p_1 - p_2) * log_2(1 - p_1 - p_2)$
 
 代码：
 
-```
+```python
 # coding: utf-8
 import numpy as np
 import matplotlib.pyplot as plt

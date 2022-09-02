@@ -21,7 +21,7 @@ date: 2020-05-18 17:08:48
 ![](https://img-blog.csdnimg.cn/20190409155404160.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70)
 #### 用深度优先搜索遍历整棵树，树采用map存储
 
-```
+```python
 def main():
   G ={}
   level = [0] * 101

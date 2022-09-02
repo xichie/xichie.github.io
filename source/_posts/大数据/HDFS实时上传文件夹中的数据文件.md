@@ -22,7 +22,7 @@ date: 2020-05-18 16:59:25
 
 python脚本：
 
-```
+```python
 import os
 from subprocess import call
 import argparse

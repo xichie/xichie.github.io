@@ -25,7 +25,7 @@ InvalidArgumentError: Incompatible shapes: [64,784] vs. [64]
    我查了一下Keras中和TensorFlow中这binary_crossentropy的源码，如下：
    
 
-```
+```python
 # keras.losses
 def binary_crossentropy(y_true, y_pred):
     return K.mean(K.binary_crossentropy(y_true, y_pred), axis=-1) 

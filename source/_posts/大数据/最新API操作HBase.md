@@ -15,7 +15,7 @@ HBase的版本2.0.1，Hadoop版本2.7.1， JDK1.8
 
 由于HBase目前网上介绍的API好多已经过时， 这里使用了最新的API，演示了如何创建表，插入数据，获取数据， 删除表几个功能。
 
-```
+```java
 public class HbaseOpreation {
     /*
         旧版API，目前已经deprecated

@@ -26,7 +26,7 @@ next_batch(batch_size, shuffle = True): 该方法返回指定batch_size大小的
 
 下面是使用该类的方法：
 
-```
+```python
 import input_data
 import numpy as np
 
