@@ -33,8 +33,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 指定文件或文件夹跳过渲染
-skip_render:
-  - about/**
+skip_render: 
+  # - cv/**
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
