@@ -12,53 +12,43 @@ layout: false
 
 </span>
 
-## Education
+## 教育背景
 
-### University of Washington | <location> Seattle, WA, USA </location> <time> Sep 2019  Present </time>
+### 北京航空航天大学 |  计算机学院  <time> 2020年9月 - 至今 </time>
 
-- B.S. in Chemical Engineering, Nanoscience and Molecular Engineering Option, with Departmental Honors
-- Minor in Applied Mathematics and Chemistry
-- Expected Graduation: June 2023
-- GPA: 3.97/4.0
+- 计算机系统结构 博士研究生
 
-### Brown University | <location> Providence, RI, USA </location> <time> Jun 2018 – Aug 2018 </time>
+### 河北大学 | 数学与信息科学学院 <time> 2017年9月 – 2020年6月 </time>
 
-- Pre-Baccalaureate Program
+- 软件工程 硕士研究生
 
-### Kinglee High School | <location> Zhengzhou, Henan, China </location> <time> Sep 2013 – Jun 2019 </time>
+### 河北大学工商学院 | 信息学部 <time> 2013年9月 – 2017年6月  </time>
+- 软件工程 本科
 
-## Professional Experience
-
-### Undergraduate Research Assistant <time> Nov 2020 – Present </time>
-
-<location> Department of Chemical Engineering, University of Washington, PI: Elizabeth Nance </location>
-
-- Quantified microglia morphology of 3 datasets using image processing and machine learning methods
-- Developed Python API for data analysis for modular integration to fluorescent image analysis workflow
-- Scanned 102 murine breast cancer tissue slices using confocal microscope (24.5 hr) for collaborators
-- Surveyed literature regarding cell segmentation, morphological analysis, and image-based profiling
-
-### Summer Undergraduate Research Scholar <time> Jun 2022 - Aug 2022 </time>
-
-<location> STROBE NSF Science and Technology Center on Real-Time Functional Imaging <br/> Department of Physics, Florida International University, PI: Jin He </location>
-
-- Fabricated and functionalized gold nanorods for promoting maturation of engineered cardiac tissues
-- Characterized gold nanorods using UV-visible spectroscopy and Raman spectroscopy
-- Measured contractile force of cardiac tissues by analyzing brightfield microscopy video data with Python
-- Processed confocal microscopy images of T-tubular systems of cardiomyocytes with Python
-
+## 编程语言
+- Python、Java、C++
 ## Honors & Awards
 <!-- May 2021, Jul 2022 -->
 <!-- ### Dan Evans Term Scholarships | <location> Department of Chemical Engineering, University of Washington </location> <time> 2021 & 2022 </time> -->
 <!-- ## Publications -->
+1.	2019年获批河北大学研究生创新项目”针对大数据环境的并行样例选择研究“（6000元，主持人）
+2.	2019年获得研究生第三学年二等奖学金
+3.	2018年获得研究生第二学年二等奖学金
+4.	2018年参加河北大学研究生创新项目：“基于开源框架的大数据主动学习“，负责MapReduce程序编写及测试
+5.	2017年获得研究生第一学年一等奖学金
+6.	2017年”河北大学大数据案例库项目“ (参与人, 负责程序的编写及测试) 
 
-## Presentations
+## 学术论文
+1. **Jiaxing Qi**, Zhongzhi Luan, Shaohan Huang, Yukun Wang, Carol J. Fung, Hailong Yang, Depei Qian:
+Adanomaly: Adaptive Anomaly Detection for System Logs with Adversarial Learning. NOMS 2022: 1-5
+1. Binary imbalanced data classification based on diversity oversampling by generative models. Inf. Sci. 585: 313-343 (2022). (学生一作, IF=8.233)
+1.	Zhai, Junhai, **Jiaxing, Qi**, and Sufang, Zhang. "An instance selection algorithm for fuzzy K-nearest neighbor." Journal of Intelligent & Fuzzy Systems vol. 40, no. 1, pp. 521-533, 2021.(学生一作, IF=1.851)
+1.	Zhai, Junhai, **Qi, Jiaxing**, and Zhang, Sufang. Imbalanced data classification based on diverse sample generation and classifier fusion. Int. J. Mach. Learn. & Cyber. (2021).(学生一作, IF=3.753)
+1.	Zhai, Junhai, **Qi, Jiaxing**, and Zhang, Sufang. "Binary Imbalanced Data Classification Based on Modified D2GAN Oversampling and Classifier Fusion," in IEEE Access, vol. 8, pp. 169456-169469, 2020, doi: 10.1109/ACCESS.2020.3023949. (学生一作,IF=3.745)
+1.	宋丹丹,翟俊海,李艳,**齐家兴**.MapReduce和Spark两种框架下的大数据极限学习机比较研究[J].小型微型计算机系统,2020,41(07):1381-1388.
+1.	王谟瀚,翟俊海,**齐家兴**.基于MapReduce和Spark的大规模压缩模糊K-近邻算法[J].计算机工程,2020,46(11):139-147.DOI:10.19678/j.issn.1000-3428.0055670.
+1.	翟俊海,**齐家兴**,沈矗,宋丹丹,王谟瀚,田石.基于MapReduce和Spark的大数据主动学习比较研究[J].计算机工程与科学,2019,41(10):1715-1722.（学生一作）
 
-Presenting Author^
-
-1. (Poster) **T.-J. Lin**^, A. Rubfiaro, G. Ghimire, J. He. Fabrication and characterization of functionalized gold nanorods for improving engineered cardiac tissue maturation. <location> Center for Diversity and Student Success Summer Research Symposium, Florida International University, Miami, FL, USA. </location> 29 July 2022.
-1. (Oral) **T.-J. Lin**^, H. Helmbrecht, E. Nance. Incorporating Visually Aided Morpho-Phenotyping Image Recognition into Robust Microglial Shape Analysis. <location> Undergraduate Research Symposium, University of Washington, Seattle, WA, USA. </location> 20 May 2022.
-1. (Oral) **T.-J. Lin**^, H. Helmbrecht, E. Nance. Robust Microglial Shape Analysis using Visually Aided Morpho-Phenotyping Image Recognition. <location> AIChE Pacific Northwest Student Regional Conference, Seattle, WA, USA. </location> 23 Apr 2022.
 
 <!-- ### Oral Presentations-->
 
@@ -68,7 +58,7 @@ Presenting Author^
 
 <!-- Add at top in reverse chronological order. -->
 
-## Teaching Experience
+<!-- ## Teaching Experience
 
 ### Calculus Teaching Assistant <time> Sep 2018 – May 2019 </time>
 
@@ -78,16 +68,7 @@ Presenting Author^
 - Clarified complex concepts and common confusions about calculus with classroom activities
 - Worked with supervisor to design and grade concept checks, homework, and quizzes with tight deadlines
 
-## Service
-
-<!-- ### Webmaster <time> Apr 2022 – Present </time>
-
-<location> American Institute of Chemical Engineers (AIChE), University of Washington </location>
-
-- Managed and designed official website; monitored and updated social media accounts and email list
-- Coordinated with internal and external media efforts to ensure up-to-date online presence
-- Facilitated coordination of ChemE BBQ event and graduation ceremony
- -->
+## Service -->
 
 <link rel="stylesheet" type="text/css" href="resume.css">
 <script src="resume.js"></script>
