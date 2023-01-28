@@ -7,8 +7,8 @@ layout: false
 
 <span class="info">
 
-[![Mail](https://simpleicons.org/icons/minutemailer.svg) tlin10@uw.edu](mailto:tlin10@uw.edu)
-[![GitHub](https://simpleicons.org/icons/github.svg) github.com/tengjuilin](https://github.com/tengjuilin)
+[![Mail](https://simpleicons.org/icons/minutemailer.svg) jiaxingqi@buaa.edu.cn](jiaxingqi@buaa.edu.cn)
+[![GitHub](https://simpleicons.org/icons/github.svg) github.com/xichie](https://github.com/xichie)
 
 </span>
 
