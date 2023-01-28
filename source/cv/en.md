@@ -38,15 +38,14 @@ layout: false
 - Zhai, Junhai, **Jiaxing, Qi**, and Zhang, Sufang. “Binary Imbalanced Data Classification Based on Modified D2GAN Oversampling and Classifier Fusion,” in IEEE Access, vol. 8, pp. 169456-169469, 2020, doi: 10.1109/ACCESS.2020.3023949. 
 
 ## Service
-- Alibaba project intern （Aug 2021 - Present）
-<!-- ### Webmaster <time> Apr 2022 – Present </time>
+### Alibaba project intern <time> Aug 2021 – Present </time>
 
-<location> American Institute of Chemical Engineers (AIChE), University of Washington </location>
+<!-- <location> American Institute of Chemical Engineers (AIChE), University of Washington </location> -->
 
-- Managed and designed official website; monitored and updated social media accounts and email list
+<!-- - Managed and designed official website; monitored and updated social media accounts and email list
 - Coordinated with internal and external media efforts to ensure up-to-date online presence
-- Facilitated coordination of ChemE BBQ event and graduation ceremony
- -->
+- Facilitated coordination of ChemE BBQ event and graduation ceremony -->
+
 
 <link rel="stylesheet" type="text/css" href="resume.css">
 <script src="resume.js"></script>
