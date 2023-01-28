@@ -7,8 +7,8 @@ layout: false
 <span class="name">Jiaxing Qi</span>
 <span class="info">
 
-<!-- [![Mail](https://simpleicons.org/icons/minutemailer.svg) tlin10@uw.edu](mailto:tlin10@uw.edu)
-[![GitHub](https://simpleicons.org/icons/github.svg) github.com/tengjuilin](https://github.com/tengjuilin) -->
+[![Mail](https://simpleicons.org/icons/minutemailer.svg) jiaxingqi@buaa.edu.cn](jiaxingqi@buaa.edu.cn)
+[![GitHub](https://simpleicons.org/icons/github.svg) github.com/xichie](https://github.com/xichie)
 
 </span>
 
@@ -30,6 +30,7 @@ layout: false
 <!-- May 2021, Jul 2022 -->
 <!-- ### Dan Evans Term Scholarships | <location> Department of Chemical Engineering, University of Washington </location> <time> 2021 & 2022 </time> -->
 ## Publications
+- **Jiaxing Qi** et al., "LogEncoder: Log-based Contrastive Representation Learning for anomaly detection," in IEEE Transactions on Network and Service Management, doi: 10.1109/TNSM.2023.3239522.
 - **Jiaxing Qi**, Zhongzhi Luan, Shaohan Huang, Yukun Wang, Carol J. Fung, Hailong Yang, Depei Qian: Adanomaly: Adaptive Anomaly Detection for System Logs with Adversarial Learning. NOMS 2022: 1-5
 - Junhai Zhai, **Jiaxing Qi**, Sufang Zhang. Binary imbalanced data classification based on diversity oversampling by generative models. Inf. Sci. 585: 313-343 (2022).
 - Zhai, Junhai, **Jiaxing, Qi**, and Sufang, Zhang. “An instance selection algorithm for fuzzy K-nearest neighbor.” Journal of Intelligent & Fuzzy Systems vol. 40, no. 1, pp. 521-533, 2021.
