@@ -35,12 +35,9 @@ layout: false
 - Zhai, Junhai, **Jiaxing, Qi**, and Sufang, Zhang. “An instance selection algorithm for fuzzy K-nearest neighbor.” Journal of Intelligent & Fuzzy Systems vol. 40, no. 1, pp. 521-533, 2021.
 - Zhai, Junhai, **Jiaxing, Qi**, and Zhang, Sufang. Imbalanced data classification based on diverse sample generation and classifier fusion. Int. J. Mach. Learn. & Cyber. (2021).
 - Zhai, Junhai, **Jiaxing, Qi**, and Zhang, Sufang. “Binary Imbalanced Data Classification Based on Modified D2GAN Oversampling and Classifier Fusion,” in IEEE Access, vol. 8, pp. 169456-169469, 2020, doi: 10.1109/ACCESS.2020.3023949. 
-- 宋丹丹,翟俊海,李艳,**齐家兴**.MapReduce和Spark两种框架下的大数据极限学习机比较研究[J].小型微型计算机系统,2020,41(07):1381-1388.
-- 王谟瀚,翟俊海,**齐家兴**.基于MapReduce和Spark的大规模压缩模糊K-近邻算法[J].计算机工程,2020,46(11):139-147.DOI:10.19678/j.issn.1000-3428.0055670.
-- 翟俊海,**齐家兴**,沈矗,宋丹丹,王谟瀚,田石.基于MapReduce和Spark的大数据主动学习比较研究[J].计算机工程与科学,2019,41(10):1715-1722.
 
 ## Service
-
+- Alibaba project intern （Aug 2021 - Present）
 <!-- ### Webmaster <time> Apr 2022 – Present </time>
 
 <location> American Institute of Chemical Engineers (AIChE), University of Washington </location>
