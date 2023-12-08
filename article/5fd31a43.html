@@ -6,14 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="PAT乙级1006:换个格式输出（c语言）, warm">
     <meta name="description" content="
-#include &amp;lt;stdio.h&gt;
-#include &amp;lt;stdlib.h&gt;
-#include &amp;lt;string.h&gt;
-#include &amp;lt;math.h&gt;
-
-int main()
-&amp;#123;	
-	int n, i,">
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748#include &amp;lt;stdio.h&amp;gt;#include">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -414,7 +407,7 @@ int main()
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    135
+                    156
                 </div>
                 
 
@@ -445,54 +438,7 @@ int main()
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p><img src="https://img-blog.csdnimg.cn/20191229180921253.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70"></p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;math.h></span></span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#123;</span>	
-	<span class="token keyword">int</span> n<span class="token punctuation">,</span> i<span class="token punctuation">,</span> len<span class="token punctuation">,</span> j<span class="token punctuation">,</span> k<span class="token punctuation">;</span>
-	<span class="token keyword">char</span> str<span class="token punctuation">[</span><span class="token number">40</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token char">'\0'</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-	<span class="token keyword">char</span> s<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span> \\最大是三位数，位数<span class="token operator">+</span><span class="token number">1</span>，最后一位存<span class="token char">'\0'</span>。
-	
-	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token function">sprintf</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span> <span class="token string">"%d"</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	len <span class="token operator">=</span> <span class="token function">strlen</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	j <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> len<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">while</span><span class="token punctuation">(</span>n <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
-	<span class="token punctuation">&#123;</span>
-		i <span class="token operator">=</span> n <span class="token operator">/</span> j<span class="token punctuation">;</span>
-		<span class="token keyword">switch</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span>
-		<span class="token punctuation">&#123;</span>
-		<span class="token keyword">case</span> <span class="token number">100</span><span class="token operator">:</span>
-			<span class="token keyword">for</span><span class="token punctuation">(</span>k <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> k <span class="token operator">&lt;</span> i<span class="token punctuation">;</span> k<span class="token operator">++</span><span class="token punctuation">)</span>
-			<span class="token punctuation">&#123;</span>
-				<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"B"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			<span class="token punctuation">&#125;</span>
-			<span class="token keyword">break</span><span class="token punctuation">;</span>
-		<span class="token keyword">case</span> <span class="token number">10</span><span class="token operator">:</span>
-			<span class="token keyword">for</span><span class="token punctuation">(</span>k <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> k <span class="token operator">&lt;</span> i<span class="token punctuation">;</span> k<span class="token operator">++</span><span class="token punctuation">)</span>
-			<span class="token punctuation">&#123;</span>
-				<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"S"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			<span class="token punctuation">&#125;</span>
-			<span class="token keyword">break</span><span class="token punctuation">;</span>
-		<span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
-			<span class="token keyword">for</span><span class="token punctuation">(</span>k <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> k <span class="token operator">&lt;</span> i<span class="token punctuation">;</span> k<span class="token operator">++</span><span class="token punctuation">)</span>
-			<span class="token punctuation">&#123;</span>
-				<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			<span class="token punctuation">&#125;</span>
-			<span class="token keyword">break</span><span class="token punctuation">;</span>
-		<span class="token keyword">default</span><span class="token operator">:</span>
-			<span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-		n <span class="token operator">=</span> n <span class="token operator">%</span> j<span class="token punctuation">;</span>
-		j <span class="token operator">/=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-		
-	<span class="token punctuation">&#125;</span>
-	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;	</span><br><span class="line">	<span class="type">int</span> n, i, len, j, k;</span><br><span class="line">	<span class="type">char</span> str[<span class="number">40</span>] = &#123;<span class="string">&#x27;\0&#x27;</span>&#125;;</span><br><span class="line">	<span class="type">char</span> s[<span class="number">4</span>]; \\最大是三位数，位数+<span class="number">1</span>，最后一位存<span class="string">&#x27;\0&#x27;</span>。</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">	<span class="built_in">sprintf</span>(s, <span class="string">&quot;%d&quot;</span>, n);</span><br><span class="line">	len = <span class="built_in">strlen</span>(s);</span><br><span class="line">	j = (<span class="type">int</span>)<span class="built_in">pow</span>(<span class="number">10</span>, len<span class="number">-1</span>);</span><br><span class="line">	<span class="keyword">while</span>(n != <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		i = n / j;</span><br><span class="line">		<span class="keyword">switch</span>(j)</span><br><span class="line">		&#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">100</span>:</span><br><span class="line">			<span class="keyword">for</span>(k =<span class="number">0</span>; k &lt; i; k++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;B&quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">10</span>:</span><br><span class="line">			<span class="keyword">for</span>(k =<span class="number">0</span>; k &lt; i; k++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;S&quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">			<span class="keyword">for</span>(k =<span class="number">0</span>; k &lt; i; k++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, k+<span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">default</span>:</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		n = n % j;</span><br><span class="line">		j /= <span class="number">10</span>;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
                 
             </div>

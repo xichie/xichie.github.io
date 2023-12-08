@@ -8,9 +8,7 @@
     <meta name="description" content="
 
 池化层以后补充。
-def conv_backward(dZ, cache):
-    &amp;quot;&amp;quot;&amp;quot;
-    Implement the backward propagation for a convolution">
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -411,7 +409,7 @@ def conv_backward(dZ, cache):
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    472
+                    448
                 </div>
                 
 
@@ -444,81 +442,7 @@ def conv_backward(dZ, cache):
                 <p><img src="https://img-blog.csdnimg.cn/20181108152101587.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70"></p>
 <p><img src="https://img-blog.csdnimg.cn/20181108152123679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70"><br><img src="https://img-blog.csdnimg.cn/20181108152139604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70"><br><img src="https://img-blog.csdnimg.cn/20181108152150116.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70"></p>
 <p>池化层以后补充。</p>
-<pre class="line-numbers language-none"><code class="language-none">def conv_backward(dZ, cache):
-    &quot;&quot;&quot;
-    Implement the backward propagation for a convolution function
-    
-    Arguments:
-    dZ -- gradient of the cost with respect to the output of the conv layer (Z), numpy array of shape (m, n_H, n_W, n_C)
-    cache -- cache of values needed for the conv_backward(), output of conv_forward()
-    
-    Returns:
-    dA_prev -- gradient of the cost with respect to the input of the conv layer (A_prev),
-               numpy array of shape (m, n_H_prev, n_W_prev, n_C_prev)
-    dW -- gradient of the cost with respect to the weights of the conv layer (W)
-          numpy array of shape (f, f, n_C_prev, n_C)
-    db -- gradient of the cost with respect to the biases of the conv layer (b)
-          numpy array of shape (1, 1, 1, n_C)
-    &quot;&quot;&quot;
-    
-    ### START CODE HERE ###
-    # Retrieve information from &quot;cache&quot;
-    (A_prev, W, b, hparameters) &#x3D; cache
-    
-    # Retrieve dimensions from A_prev&#39;s shape
-    (m, n_H_prev, n_W_prev, n_C_prev) &#x3D; A_prev.shape
-    
-    # Retrieve dimensions from W&#39;s shape
-    (f, f, n_C_prev, n_C) &#x3D; W.shape
-    
-    # Retrieve information from &quot;hparameters&quot;
-    stride &#x3D; hparameters[&#39;stride&#39;]
-    pad &#x3D; hparameters[&#39;pad&#39;]
-    
-    # Retrieve dimensions from dZ&#39;s shape
-    (m, n_H, n_W, n_C) &#x3D; dZ.shape
-    
-    # Initialize dA_prev, dW, db with the correct shapes
-    dA_prev &#x3D; np.zeros((m, n_H_prev, n_W_prev, n_C_prev))                           
-    dW &#x3D; np.zeros((f, f, n_C_prev, n_C))
-    db &#x3D; np.zeros((1, 1, 1, n_C))
-
-    # Pad A_prev and dA_prev
-    A_prev_pad &#x3D; zero_pad(A_prev, pad)
-    dA_prev_pad &#x3D; zero_pad(dA_prev, pad)
-    
-    for i in range(m):                       # loop over the training examples
-        
-        # select ith training example from A_prev_pad and dA_prev_pad
-        a_prev_pad &#x3D; A_prev_pad[i]
-        da_prev_pad &#x3D; dA_prev_pad[i]
-        
-        for h in range(n_H):                   # loop over vertical axis of the output volume
-            for w in range(n_W):               # loop over horizontal axis of the output volume
-                for c in range(n_C):           # loop over the channels of the output volume
-                    
-                    # Find the corners of the current &quot;slice&quot;
-                    vert_start &#x3D; h * stride
-                    vert_end &#x3D; vert_start + f
-                    horiz_start &#x3D; w * stride
-                    horiz_end &#x3D; horiz_start + f
-                    
-                    # Use the corners to define the slice from a_prev_pad
-                    a_slice &#x3D; a_prev_pad[vert_start:vert_end, horiz_start:horiz_end, :]
-
-                    # Update gradients for the window and the filter&#39;s parameters using the code formulas given above
-                    da_prev_pad[vert_start:vert_end, horiz_start:horiz_end, :] +&#x3D; W[:,:,:,c] * dZ[i, h, w, c]
-                    dW[:,:,:,c] +&#x3D; a_slice * dZ[i, h, w, c]
-                    db[:,:,:,c] +&#x3D; dZ[i, h, w, c]
-                    
-        # Set the ith training example&#39;s dA_prev to the unpaded da_prev_pad (Hint: use X[pad:-pad, pad:-pad, :])
-        dA_prev[i, :, :, :] &#x3D; dA_prev_pad[i, pad:-pad, pad:-pad, :]
-    ### END CODE HERE ###
-    
-    # Making sure your output shape is correct
-    assert(dA_prev.shape &#x3D;&#x3D; (m, n_H_prev, n_W_prev, n_C_prev))
-    
-    return dA_prev, dW, db<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">def conv_backward(dZ, cache):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    Implement the backward propagation for a convolution function</span><br><span class="line">    </span><br><span class="line">    Arguments:</span><br><span class="line">    dZ -- gradient of the cost with respect to the output of the conv layer (Z), numpy array of shape (m, n_H, n_W, n_C)</span><br><span class="line">    cache -- cache of values needed for the conv_backward(), output of conv_forward()</span><br><span class="line">    </span><br><span class="line">    Returns:</span><br><span class="line">    dA_prev -- gradient of the cost with respect to the input of the conv layer (A_prev),</span><br><span class="line">               numpy array of shape (m, n_H_prev, n_W_prev, n_C_prev)</span><br><span class="line">    dW -- gradient of the cost with respect to the weights of the conv layer (W)</span><br><span class="line">          numpy array of shape (f, f, n_C_prev, n_C)</span><br><span class="line">    db -- gradient of the cost with respect to the biases of the conv layer (b)</span><br><span class="line">          numpy array of shape (1, 1, 1, n_C)</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    </span><br><span class="line">    ### START CODE HERE ###</span><br><span class="line">    # Retrieve information from &quot;cache&quot;</span><br><span class="line">    (A_prev, W, b, hparameters) = cache</span><br><span class="line">    </span><br><span class="line">    # Retrieve dimensions from A_prev&#x27;s shape</span><br><span class="line">    (m, n_H_prev, n_W_prev, n_C_prev) = A_prev.shape</span><br><span class="line">    </span><br><span class="line">    # Retrieve dimensions from W&#x27;s shape</span><br><span class="line">    (f, f, n_C_prev, n_C) = W.shape</span><br><span class="line">    </span><br><span class="line">    # Retrieve information from &quot;hparameters&quot;</span><br><span class="line">    stride = hparameters[&#x27;stride&#x27;]</span><br><span class="line">    pad = hparameters[&#x27;pad&#x27;]</span><br><span class="line">    </span><br><span class="line">    # Retrieve dimensions from dZ&#x27;s shape</span><br><span class="line">    (m, n_H, n_W, n_C) = dZ.shape</span><br><span class="line">    </span><br><span class="line">    # Initialize dA_prev, dW, db with the correct shapes</span><br><span class="line">    dA_prev = np.zeros((m, n_H_prev, n_W_prev, n_C_prev))                           </span><br><span class="line">    dW = np.zeros((f, f, n_C_prev, n_C))</span><br><span class="line">    db = np.zeros((1, 1, 1, n_C))</span><br><span class="line"></span><br><span class="line">    # Pad A_prev and dA_prev</span><br><span class="line">    A_prev_pad = zero_pad(A_prev, pad)</span><br><span class="line">    dA_prev_pad = zero_pad(dA_prev, pad)</span><br><span class="line">    </span><br><span class="line">    for i in range(m):                       # loop over the training examples</span><br><span class="line">        </span><br><span class="line">        # select ith training example from A_prev_pad and dA_prev_pad</span><br><span class="line">        a_prev_pad = A_prev_pad[i]</span><br><span class="line">        da_prev_pad = dA_prev_pad[i]</span><br><span class="line">        </span><br><span class="line">        for h in range(n_H):                   # loop over vertical axis of the output volume</span><br><span class="line">            for w in range(n_W):               # loop over horizontal axis of the output volume</span><br><span class="line">                for c in range(n_C):           # loop over the channels of the output volume</span><br><span class="line">                    </span><br><span class="line">                    # Find the corners of the current &quot;slice&quot;</span><br><span class="line">                    vert_start = h * stride</span><br><span class="line">                    vert_end = vert_start + f</span><br><span class="line">                    horiz_start = w * stride</span><br><span class="line">                    horiz_end = horiz_start + f</span><br><span class="line">                    </span><br><span class="line">                    # Use the corners to define the slice from a_prev_pad</span><br><span class="line">                    a_slice = a_prev_pad[vert_start:vert_end, horiz_start:horiz_end, :]</span><br><span class="line"></span><br><span class="line">                    # Update gradients for the window and the filter&#x27;s parameters using the code formulas given above</span><br><span class="line">                    da_prev_pad[vert_start:vert_end, horiz_start:horiz_end, :] += W[:,:,:,c] * dZ[i, h, w, c]</span><br><span class="line">                    dW[:,:,:,c] += a_slice * dZ[i, h, w, c]</span><br><span class="line">                    db[:,:,:,c] += dZ[i, h, w, c]</span><br><span class="line">                    </span><br><span class="line">        # Set the ith training example&#x27;s dA_prev to the unpaded da_prev_pad (Hint: use X[pad:-pad, pad:-pad, :])</span><br><span class="line">        dA_prev[i, :, :, :] = dA_prev_pad[i, pad:-pad, pad:-pad, :]</span><br><span class="line">    ### END CODE HERE ###</span><br><span class="line">    </span><br><span class="line">    # Making sure your output shape is correct</span><br><span class="line">    assert(dA_prev.shape == (m, n_H_prev, n_W_prev, n_C_prev))</span><br><span class="line">    </span><br><span class="line">    return dA_prev, dW, db</span><br></pre></td></tr></table></figure>
 
 <h2 id="参考资料：-吴恩达老师深度学习课后作业。"><a href="#参考资料：-吴恩达老师深度学习课后作业。" class="headerlink" title="参考资料： 吴恩达老师深度学习课后作业。"></a>参考资料： 吴恩达老师深度学习课后作业。</h2>
                 

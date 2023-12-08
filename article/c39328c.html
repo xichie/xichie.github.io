@@ -13,8 +13,7 @@
 判断是否已经上传，如果没有，上传，并记录
 
 python脚本：
-import os
-from subproces">
+123456789101112131415161">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -407,7 +406,7 @@ from subproces">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    131
+                    133
                 </div>
                 
 
@@ -445,25 +444,7 @@ from subproces">
 <li>判断是否已经上传，如果没有，上传，并记录</li>
 </ol>
 <p>python脚本：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> os
-<span class="token keyword">from</span> subprocess <span class="token keyword">import</span> call
-<span class="token keyword">import</span> argparse
-
-parser <span class="token operator">=</span> argparse<span class="token punctuation">.</span>ArgumentParser<span class="token punctuation">(</span><span class="token punctuation">)</span>
-parser<span class="token punctuation">.</span>add_argument<span class="token punctuation">(</span><span class="token string">"path"</span><span class="token punctuation">,</span> <span class="token builtin">type</span><span class="token operator">=</span><span class="token builtin">str</span><span class="token punctuation">)</span>
-args <span class="token operator">=</span> parser<span class="token punctuation">.</span>parse_args<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-old_files <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-path <span class="token operator">=</span> args<span class="token punctuation">.</span>path
-
-<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
-    files <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span>path<span class="token punctuation">)</span>
-    <span class="token keyword">for</span> <span class="token builtin">file</span> <span class="token keyword">in</span> files<span class="token punctuation">:</span>
-        <span class="token keyword">if</span> <span class="token builtin">file</span> <span class="token keyword">not</span> <span class="token keyword">in</span> old_files<span class="token punctuation">:</span>
-            ret_code <span class="token operator">=</span> call<span class="token punctuation">(</span><span class="token string">'hdfs dfs -put %s /qjx/test'</span> <span class="token operator">%</span><span class="token builtin">file</span><span class="token punctuation">,</span> shell<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
-            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'code:%s, filename:%s'</span><span class="token operator">%</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>ret_code<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">file</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-            old_files<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token builtin">file</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> subprocess <span class="keyword">import</span> call</span><br><span class="line"><span class="keyword">import</span> argparse</span><br><span class="line"></span><br><span class="line">parser = argparse.ArgumentParser()</span><br><span class="line">parser.add_argument(<span class="string">&quot;path&quot;</span>, <span class="built_in">type</span>=<span class="built_in">str</span>)</span><br><span class="line">args = parser.parse_args()</span><br><span class="line"></span><br><span class="line">old_files = []</span><br><span class="line">path = args.path</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    files = os.listdir(path)</span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files:</span><br><span class="line">        <span class="keyword">if</span> file <span class="keyword">not</span> <span class="keyword">in</span> old_files:</span><br><span class="line">            ret_code = call(<span class="string">&#x27;hdfs dfs -put %s /qjx/test&#x27;</span> %file, shell=<span class="literal">True</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;code:%s, filename:%s&#x27;</span>%(<span class="built_in">str</span>(ret_code), file))</span><br><span class="line">            old_files.append(file)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
                 
             </div>

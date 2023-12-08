@@ -440,111 +440,21 @@
 <h2 id="配置VSCode环境"><a href="#配置VSCode环境" class="headerlink" title="配置VSCode环境"></a>配置VSCode环境</h2><p>先安装如下图所示的插件，只需要安装第2个和第3个就可以。<br><img src="https://img-blog.csdnimg.cn/20190622133124840.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后打开vscode的配置文件（vscode的左下角蓝色圈圈那个位置，点击<strong>设置</strong>进入配置文件）如图：</p>
 <p><img src="https://img-blog.csdnimg.cn/20190622134346401.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后点击上图右上角红色圈住的图标，进入配置文件（json格式的），如图：</p>
 <p><img src="https://img-blog.csdnimg.cn/20190622134555491.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>把下面的配置复制进去，就可以。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;
-    &quot;git.ignoreMissingGitWarning&quot;: true,
-    &quot;files.autoSave&quot;: &quot;afterDelay&quot;,
-    &quot;editor.fontSize&quot;: 16,
-    &quot;editor.fontFamily&quot;: &quot;&#39;Courier New&#39;&quot;,
-    &quot;editor.wordWrap&quot;: &quot;on&quot;,
-    &#x2F;&#x2F; latex
-    &quot;latex-workshop.latex.recipes&quot;: [
-    &#123;
-        &quot;name&quot;: &quot;pdflatex -&gt; bibtex -&gt; pdflatex*2&quot;,
-        &quot;tools&quot;: [
-            &quot;pdflatex&quot;,
-            &quot;bibtex&quot;,
-            &quot;pdflatex&quot;,
-            &quot;pdflatex&quot;
-        ]
-    &#125;
-    ],
-    &quot;latex-workshop.latex.tools&quot;: [&#123;
-        &quot;name&quot;: &quot;latexmk&quot;,
-        &quot;command&quot;: &quot;latexmk&quot;,
-        &quot;args&quot;: [
-            &quot;-synctex&#x3D;1&quot;,
-            &quot;-interaction&#x3D;nonstopmode&quot;,
-            &quot;-file-line-error&quot;,
-            &quot;-pdf&quot;,
-            &quot;%DOC%&quot;
-        ]
-    &#125;, &#123;
-        &quot;name&quot;: &quot;xelatex&quot;,
-        &quot;command&quot;: &quot;xelatex&quot;,
-        &quot;args&quot;: [
-            &quot;-synctex&#x3D;1&quot;,
-            &quot;-interaction&#x3D;nonstopmode&quot;,
-            &quot;-file-line-error&quot;,
-            &quot;%DOC%&quot;
-        ]
-    &#125;, &#123;
-        &quot;name&quot;: &quot;pdflatex&quot;,
-        &quot;command&quot;: &quot;pdflatex&quot;,
-        &quot;args&quot;: [
-            &quot;-synctex&#x3D;1&quot;,
-            &quot;-interaction&#x3D;nonstopmode&quot;,
-            &quot;-file-line-error&quot;,
-            &quot;%DOC%&quot;
-        ]
-    &#125;, &#123;
-        &quot;name&quot;: &quot;bibtex&quot;,
-        &quot;command&quot;: &quot;bibtex&quot;,
-        &quot;args&quot;: [
-            &quot;%DOCFILE%&quot;
-        ]
-    &#125;],
-    &quot;latex-workshop.view.pdf.viewer&quot;: &quot;tab&quot;,
-    &quot;latex-workshop.view.pdf.hand&quot;: true,
-    &quot;latex-workshop.latex.autoBuild.run&quot;: &quot;onFileChange&quot;,
-    &quot;latex-workshop.latex.clean.fileTypes&quot;: [
-        &quot;.aux&quot;,
-        &quot;.bbl&quot;,
-        &quot;.blg&quot;,
-        &quot;.idx&quot;,
-        &quot;.ind&quot;,
-        &quot;.lof&quot;,
-        &quot;.lot&quot;,
-        &quot;.out&quot;,
-        &quot;.toc&quot;,
-        &quot;.acn&quot;,
-        &quot;.acr&quot;,
-        &quot;.alg&quot;,
-        &quot;.glg&quot;,
-        &quot;.glo&quot;,
-        &quot;.gls&quot;,
-        &quot;.ist&quot;,
-        &quot;.fls&quot;,
-        &quot;.log&quot;,
-        &quot;.spl&quot;,
-        &quot;.synctex.gz&quot;,
-        &quot;*.fdb_latexmk&quot;
-    ],
-    &quot;latex-workshop.latex.autoClean.run&quot;: &quot;onBuilt&quot;,
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;git.ignoreMissingGitWarning&quot;: true,</span><br><span class="line">    &quot;files.autoSave&quot;: &quot;afterDelay&quot;,</span><br><span class="line">    &quot;editor.fontSize&quot;: 16,</span><br><span class="line">    &quot;editor.fontFamily&quot;: &quot;&#x27;Courier New&#x27;&quot;,</span><br><span class="line">    &quot;editor.wordWrap&quot;: &quot;on&quot;,</span><br><span class="line">    // latex</span><br><span class="line">    &quot;latex-workshop.latex.recipes&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;name&quot;: &quot;pdflatex -&gt; bibtex -&gt; pdflatex*2&quot;,</span><br><span class="line">        &quot;tools&quot;: [</span><br><span class="line">            &quot;pdflatex&quot;,</span><br><span class="line">            &quot;bibtex&quot;,</span><br><span class="line">            &quot;pdflatex&quot;,</span><br><span class="line">            &quot;pdflatex&quot;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">    ],</span><br><span class="line">    &quot;latex-workshop.latex.tools&quot;: [&#123;</span><br><span class="line">        &quot;name&quot;: &quot;latexmk&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;latexmk&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-synctex=1&quot;,</span><br><span class="line">            &quot;-interaction=nonstopmode&quot;,</span><br><span class="line">            &quot;-file-line-error&quot;,</span><br><span class="line">            &quot;-pdf&quot;,</span><br><span class="line">            &quot;%DOC%&quot;</span><br><span class="line">        ]</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">        &quot;name&quot;: &quot;xelatex&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;xelatex&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-synctex=1&quot;,</span><br><span class="line">            &quot;-interaction=nonstopmode&quot;,</span><br><span class="line">            &quot;-file-line-error&quot;,</span><br><span class="line">            &quot;%DOC%&quot;</span><br><span class="line">        ]</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">        &quot;name&quot;: &quot;pdflatex&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;pdflatex&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;-synctex=1&quot;,</span><br><span class="line">            &quot;-interaction=nonstopmode&quot;,</span><br><span class="line">            &quot;-file-line-error&quot;,</span><br><span class="line">            &quot;%DOC%&quot;</span><br><span class="line">        ]</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">        &quot;name&quot;: &quot;bibtex&quot;,</span><br><span class="line">        &quot;command&quot;: &quot;bibtex&quot;,</span><br><span class="line">        &quot;args&quot;: [</span><br><span class="line">            &quot;%DOCFILE%&quot;</span><br><span class="line">        ]</span><br><span class="line">    &#125;],</span><br><span class="line">    &quot;latex-workshop.view.pdf.viewer&quot;: &quot;tab&quot;,</span><br><span class="line">    &quot;latex-workshop.view.pdf.hand&quot;: true,</span><br><span class="line">    &quot;latex-workshop.latex.autoBuild.run&quot;: &quot;onFileChange&quot;,</span><br><span class="line">    &quot;latex-workshop.latex.clean.fileTypes&quot;: [</span><br><span class="line">        &quot;.aux&quot;,</span><br><span class="line">        &quot;.bbl&quot;,</span><br><span class="line">        &quot;.blg&quot;,</span><br><span class="line">        &quot;.idx&quot;,</span><br><span class="line">        &quot;.ind&quot;,</span><br><span class="line">        &quot;.lof&quot;,</span><br><span class="line">        &quot;.lot&quot;,</span><br><span class="line">        &quot;.out&quot;,</span><br><span class="line">        &quot;.toc&quot;,</span><br><span class="line">        &quot;.acn&quot;,</span><br><span class="line">        &quot;.acr&quot;,</span><br><span class="line">        &quot;.alg&quot;,</span><br><span class="line">        &quot;.glg&quot;,</span><br><span class="line">        &quot;.glo&quot;,</span><br><span class="line">        &quot;.gls&quot;,</span><br><span class="line">        &quot;.ist&quot;,</span><br><span class="line">        &quot;.fls&quot;,</span><br><span class="line">        &quot;.log&quot;,</span><br><span class="line">        &quot;.spl&quot;,</span><br><span class="line">        &quot;.synctex.gz&quot;,</span><br><span class="line">        &quot;*.fdb_latexmk&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;latex-workshop.latex.autoClean.run&quot;: &quot;onBuilt&quot;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>ok！vscode环境就配置好了！</strong>下面就等着CTex安装完毕，CTex安装完后，应该会自动配置系统的环境变量（没有的话，可以自己配置一下）。如图：<br><img src="https://img-blog.csdnimg.cn/20190622135009307.png" alt="在这里插入图片描述"></p>
 <h2 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h2><p>最后效果如下图：可以边写，边看效果。编译速度还是可以的。<br><img src="https://img-blog.csdnimg.cn/20190622135604554.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p><strong>还没完！！！，还有一些关于latex导入中文文献的问题。</strong></p>
 <h2 id="Bibtex导入中文文献的问题"><a href="#Bibtex导入中文文献的问题" class="headerlink" title="Bibtex导入中文文献的问题"></a>Bibtex导入中文文献的问题</h2><p>关于如何使用Bibtex导入文献的问题，这里我做一个简单的介绍：<br>首先在你的 <strong>.tex</strong> 文件在目录下，创建一个后缀为 <strong>.bib</strong> 的文件，比如叫：<strong>ref.bib</strong>。<br>在你的 <strong>.tex</strong> 文件中 <strong>\end{document}</strong> 前面加入下面两行：</p>
-<pre class="line-numbers language-none"><code class="language-none">\bibliographystyle&#123;ieeetr&#125;       %这里是参考文献的引用格式，可以自定义。
-\bibliography&#123;ref&#125;       %这里是你自己的.bib文件的名字<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\bibliographystyle&#123;ieeetr&#125;       %这里是参考文献的引用格式，可以自定义。</span><br><span class="line">\bibliography&#123;ref&#125;       %这里是你自己的.bib文件的名字</span><br></pre></td></tr></table></figure>
 <p>然后我们通过google学术（没梯子的可以用镜像：）或者百度学术，搜索我们引用的论文：<br><img src="https://img-blog.csdnimg.cn/20190622141223288.png" alt="在这里插入图片描述"><br>点击下面的双引号，出现：<br><img src="https://img-blog.csdnimg.cn/20190622141321153.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>我们选择Bibtex，将出现的网页上的内容复制，粘贴到自己创建的.bib文件中就行。<br><img src="https://img-blog.csdnimg.cn/2019062214143375.png" alt="在这里插入图片描述"><br>在.tex中，导入参考文献相应的包：</p>
-<pre class="line-numbers language-none"><code class="language-none">\usepackage&#123;cite&#125;
-\newcommand&#123;\upcite&#125;[1]&#123;\textsuperscript&#123;\textsuperscript&#123;\cite&#123;#1&#125;&#125;&#125;&#125; %参考文献上标<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\usepackage&#123;cite&#125;</span><br><span class="line">\newcommand&#123;\upcite&#125;[1]&#123;\textsuperscript&#123;\textsuperscript&#123;\cite&#123;#1&#125;&#125;&#125;&#125; %参考文献上标</span><br></pre></td></tr></table></figure>
 <p>引用格式：</p>
-<pre class="line-numbers language-none"><code class="language-none">\begin&#123;document&#125;
-\maketitle          %添加这一句才能够显示标题等信息
-
-我爱你，中国！！！\upcite&#123;wu2008fast&#125;
-中文文献\upcite&#123;meng&#125;
-
-\bibliographystyle&#123;ieeetr&#125;
-\bibliography&#123;ref&#125; 
-\end&#123;document&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;document&#125;</span><br><span class="line">\maketitle          %添加这一句才能够显示标题等信息</span><br><span class="line"></span><br><span class="line">我爱你，中国！！！\upcite&#123;wu2008fast&#125;</span><br><span class="line">中文文献\upcite&#123;meng&#125;</span><br><span class="line"></span><br><span class="line">\bibliographystyle&#123;ieeetr&#125;</span><br><span class="line">\bibliography&#123;ref&#125; </span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
 <p>效果：<br><img src="https://img-blog.csdnimg.cn/20190622143118919.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h4 id="我们可以看到，对于中文参考文献，如果用ieeetr等默认的格式，就会有问题。"><a href="#我们可以看到，对于中文参考文献，如果用ieeetr等默认的格式，就会有问题。" class="headerlink" title="我们可以看到，对于中文参考文献，如果用ieeetr等默认的格式，就会有问题。"></a>我们可以看到，对于中文参考文献，如果用ieeetr等默认的格式，就会有问题。</h4><p>这里我找到了一个模板，可以下载下来：<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Haixing-Hu/GBT7714-2005-BibTeX-Style/master/gbt7714-2005.bst">https://raw.githubusercontent.com/Haixing-Hu/GBT7714-2005-BibTeX-Style/master/gbt7714-2005.bst</a> 直接复制保存为.bst文件就行。比如叫chinese.bst<br>然后将这个bst文件放到和你的.tex文件同一目录下，只需要更改bst文件的引用就行：</p>
-<pre class="line-numbers language-none"><code class="language-none">\bibliographystyle&#123;chinese.bst&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\bibliographystyle&#123;chinese.bst&#125;</span><br></pre></td></tr></table></figure>
 <p>并且参考文献的标题是英文的，如果想改成中文，在文件开头加入下面的代码</p>
-<pre class="line-numbers language-none"><code class="language-none">\renewcommand\refname&#123;参考文献&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\renewcommand\refname&#123;参考文献&#125;</span><br></pre></td></tr></table></figure>
 <p>效果如图：</p>
 <p><img src="https://img-blog.csdnimg.cn/20190622143401674.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTcyNzM1,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，latex+vscode的环境就算配置好了，其它如果有关于latex格式的问题，可以直接百度，基本上都能轻松搞定。</p>
