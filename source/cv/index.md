@@ -32,11 +32,8 @@ layout: false
 <!-- ### Dan Evans Term Scholarships | <location> Department of Chemical Engineering, University of Washington </location> <time> 2021 & 2022 </time> -->
 <!-- ## Publications -->
 1. 2019年获批河北大学研究生创新项目”针对大数据环境的并行样例选择研究“（6000元，主持人）
-1. 2019年获得研究生第三学年二等奖学金
-1. 2018年获得研究生第二学年二等奖学金
-1. 2018年参加河北大学研究生创新项目：“基于开源框架的大数据主动学习“，负责MapReduce程序编写及测试
-1. 2017年获得研究生第一学年一等奖学金
-1. 2017年”河北大学大数据案例库项目“ (参与人, 负责程序的编写及测试) 
+2. 2018年参加河北大学研究生创新项目：“基于开源框架的大数据主动学习“，负责MapReduce程序编写及测试
+3. 2017年”河北大学大数据案例库项目“ (参与人, 负责程序的编写及测试) 
 
 ## 学术论文
 1. **Jiaxing Qi**, Shaohan Huang, Shu Yang, Zhongzhi Luan, Carol J. Fung, Hailong Yang, Depei Qian, Jing Shang, Zhiwen Xiao, Zhihui Wu. LogGPT: Exploring ChatGPT for Log-Based Anomaly Detection. HPCC'23
