@@ -45,7 +45,7 @@ Google Scholar citation statistics:
 <a href='{{ scholar_url }}'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Citations"></a>
 {% endif %}
 
-### Journal and Conference Publications
+### Selected Publications <small><a href="{{ scholar_url }}">View all</a></small>
 
 <sup>†</sup> Corresponding author.
 
@@ -111,35 +111,6 @@ Google Scholar citation statistics:
 - `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Carol Fung, Hailong Yang, Depei Qian. SpikeLog: Log-Based Anomaly Detection via Potential-Assisted Spiking Neuron Network. *IEEE Transactions on Knowledge and Data Engineering*, 36(12): 9322-9335, 2023.<br>
 [[Webpage]](https://ieeexplore.ieee.org/abstract/document/10375739/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:Y0pCki6q_DkC'></span>
 
-#### 2022
-
-- Junhai Zhai, `Jiaxing Qi`, Chu Shen. Binary Imbalanced Data Classification Based on Diversity Oversampling by Generative Models. *Information Sciences*, 585: 313-343, 2022.<br>
-[[Webpage]](https://www.sciencedirect.com/science/article/pii/S0020025521011804) <span class='show_paper_citations' data='-sLEDGMAAAAJ:9yKSN-GCB0IC'></span>
-
-- Junhai Zhai, `Jiaxing Qi`, Sufang Zhang. Imbalanced Data Classification Based on Diverse Sample Generation and Classifier Fusion. *International Journal of Machine Learning and Cybernetics*, 13(3): 735-750, 2022.<br>
-[[Webpage]](https://link.springer.com/article/10.1007/s13042-021-01321-9) <span class='show_paper_citations' data='-sLEDGMAAAAJ:u5HHmVD_uO8C'></span>
-
-- `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Yukun Wang, Carol Fung, Hailong Yang, Depei Qian. AdaAnomaly: Adaptive Anomaly Detection for System Logs with Adversarial Learning. *NOMS 2022 - 2022 IEEE/IFIP Network Operations and Management Symposium*, pp. 1-5, 2022.<br>
-[[Webpage]](https://ieeexplore.ieee.org/abstract/document/9789917/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:UeHWp8X0CEIC'></span>
-
-#### 2021
-
-- Junhai Zhai, `Jiaxing Qi`, Sufang Zhang. An Instance Selection Algorithm for Fuzzy K-Nearest Neighbor. *Journal of Intelligent & Fuzzy Systems*, 40(1): 521-533, 2021.<br>
-[[Webpage]](https://journals.sagepub.com/doi/abs/10.3233/JIFS-200124) <span class='show_paper_citations' data='-sLEDGMAAAAJ:d1gkVwhDpl0C'></span>
-
-#### 2020
-
-- Junhai Zhai, `Jiaxing Qi`, Sufang Zhang. Binary Imbalanced Data Classification Based on Modified D2GAN Oversampling and Classifier Fusion. *IEEE Access*, 8: 169456-169469, 2020.<br>
-[[Webpage]](https://ieeexplore.ieee.org/abstract/document/9195865/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:u-x6o8ySG0sC'></span>
-
-- Dandan Song, Junhai Zhai, Yan Li, `Jiaxing Qi`. Comparative Study on Big Data Extreme Learning Machines Under MapReduce and Spark Frameworks. *Journal of Chinese Computer Systems*, 41(7): 1381-1388, 2020.<br>
-[[Webpage]](http://xwxt.sict.ac.cn/EN/abstract/abstract5460.shtml) <span class='show_paper_citations' data='-sLEDGMAAAAJ:3fE2CSJIrl8C'></span>
-
-#### 2019
-
-- Junhai Zhai, `Jiaxing Qi`, Chu Shen, Dandan Song, Mohan Wang, Shi Tian. Comparative Study of Big Data Active Learning Based on MapReduce and Spark. *Computer Engineering & Science*, 41(10): 1715, 2019.<br>
-[[Webpage]](https://scholar.google.com/scholar?cluster=3773853539799613889&hl=en&oi=scholarr) <span class='show_paper_citations' data='-sLEDGMAAAAJ:IjCSPb-OGe4C'></span>
-
 <!-- <span class='anchor' id='projects'></span>
 
 # Projects
@@ -149,10 +120,10 @@ Google Scholar citation statistics:
 
 <span class='anchor' id='awards'></span> -->
 
-<!-- # Awards
+# Awards
 
-- *YYYY.MM*, Award name, granting organization.
-- *YYYY.MM*, Award name, granting organization. -->
+- *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service.
+<!-- - *YYYY.MM*, Award name, granting organization. -->
 
 <!-- <span class='anchor' id='talks'></span>
 
