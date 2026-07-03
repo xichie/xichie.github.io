@@ -19,7 +19,7 @@
    - Name: `GOOGLE_SCHOLAR_ID`
    - Value: 你的 Scholar ID
 4. 当前 `_config.yml` 已填写：
-   - `repository: "xichie/jiaxingqi.github.io"`
+   - `repository: "xichie/xichie.github.io"`
    - `author.googlescholar: "https://scholar.google.com/citations?user=-sLEDGMAAAAJ&hl=zh-CN"`
 
 GitHub Actions 中需要新增的 Scholar secret 为：
@@ -51,13 +51,11 @@ BUNDLE_PATH=/private/tmp/acad-homepage-bundle BUNDLE_BUILD__NOKOGIRI=--use-syste
 当前配置按以下仓库信息填写：
 
 ```text
-xichie/jiaxingqi.github.io
+xichie/xichie.github.io
 ```
 
-如果你希望最终访问地址就是：
+最终访问地址：
 
 ```text
-https://jiaxingqi.github.io
+https://xichie.github.io
 ```
-
-GitHub 账号或组织名需要是 `jiaxingqi`，仓库名需要是 `jiaxingqi.github.io`。如果继续使用 GitHub 用户名 `xichie`，默认的 GitHub Pages 用户主页地址通常会是 `https://xichie.github.io`，而 `xichie/jiaxingqi.github.io` 更像项目仓库名。
