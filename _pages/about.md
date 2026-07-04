@@ -111,17 +111,14 @@ Google Scholar citation statistics:
 - `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Carol Fung, Hailong Yang, Depei Qian. SpikeLog: Log-Based Anomaly Detection via Potential-Assisted Spiking Neuron Network. *IEEE Transactions on Knowledge and Data Engineering*, 36(12): 9322-9335, 2023.<br>
 [[Webpage]](https://ieeexplore.ieee.org/abstract/document/10375739/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:Y0pCki6q_DkC'></span>
 
-<!-- <span class='anchor' id='projects'></span>
+<span class='anchor' id='projects'></span>
 
 # Projects
+- *2023 - 2024*, The Academic Excellence Foundation of BUAA for PhD Students.
 
-- *YYYY - YYYY*, Project title, your role. Briefly describe the goal, method, and your contribution.
-- *YYYY - YYYY*, Project title, your role. Briefly describe the goal, method, and your contribution.
 
-<span class='anchor' id='awards'></span> -->
-
+<span class='anchor' id='awards'></span>
 # Awards
-
 - 🏆 *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service.
 <!-- - *YYYY.MM*, Award name, granting organization. -->
 
@@ -133,7 +130,6 @@ Google Scholar citation statistics:
 - *YYYY.MM*, Talk or conference title, location, presentation type. -->
 
 <span class='anchor' id='experience'></span>
-
 # Experience
 - *April 2026 - Present*, Postdoctoral Researcher, Beihang University, working with Prof. Yongxin Tong.
 - *April 2024 - Dec 2025*, Research Intern, Beijing Digital Native Digital City Research Center.
