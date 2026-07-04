@@ -20,7 +20,7 @@ redirect_from:
 
 # About Me
 
-I am a **postdoctoral researcher at Beihang University**, working with **Prof. Yongxin Tong**. I received my Ph.D. degree from **Beihang University** in **2026**, advised by **Prof. Zhongzhi Luan**.
+I am a **postdoctoral researcher at Beihang University**, working with **[Prof. Yongxin Tong](https://yongxintong.github.io/)**. I received my Ph.D. degree from **Beihang University** in **2026**, advised by **Prof. Zhongzhi Luan**.
 
 
 My research interests span artificial intelligence for software engineering, AI-assisted biological data analysis, and AI-enabled system management. I am particularly interested in building practical AI methods that can support automated software engineering workflows, help biologists analyze proteomics data more efficiently, and improve the reliability and observability of modern computing systems.
@@ -122,7 +122,7 @@ Google Scholar citation statistics:
 
 # Awards
 
-- *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service.
+- 🏆 *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service.
 <!-- - *YYYY.MM*, Award name, granting organization. -->
 
 <!-- <span class='anchor' id='talks'></span>
