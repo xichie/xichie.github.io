@@ -59,3 +59,19 @@ xichie/xichie.github.io
 ```text
 https://xichie.github.io
 ```
+
+## 一键更新发布
+
+修改 `_pages/about.md`、`_config.yml` 或其他主页内容后，可以在仓库根目录运行：
+
+```bash
+./publish.sh "Update homepage"
+```
+
+脚本会自动执行本地检查、Jekyll 构建、`git add`、`git commit`、`git pull --rebase` 和 `git push`。
+
+如果本地 Jekyll 依赖暂时不可用，只想直接提交并推送，可以跳过本地构建：
+
+```bash
+./publish.sh --no-build "Update homepage"
+```
