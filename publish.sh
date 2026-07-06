@@ -43,11 +43,11 @@ if [[ "${SKIP_BUILD:-0}" != "1" ]]; then
 
     echo "Building site in a temporary copy..."
     rsync -a \
-      --exclude '.git' \
-      --exclude '.bundle' \
-      --exclude '_site' \
-      --exclude 'vendor' \
-      --exclude 'node_modules' \
+      --exclude '/.git/' \
+      --exclude '/.bundle/' \
+      --exclude '/_site/' \
+      --exclude '/vendor/' \
+      --exclude '/node_modules/' \
       "$ROOT/" "$TMP_BASE/site/"
 
     (
