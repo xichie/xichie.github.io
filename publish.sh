@@ -81,5 +81,33 @@ git pull --rebase origin "$BRANCH"
 echo "Pushing to origin/$BRANCH..."
 git push origin "$BRANCH"
 
-echo "Published successfully."
+echo "Pushed successfully."
+
+if command -v gh >/dev/null 2>&1; then
+  REPO="$(git config --get remote.origin.url | sed -E 's#^git@github.com:##; s#^https://github.com/##; s#\.git$##')"
+  if [[ "$REPO" == */* ]]; then
+    echo "Waiting for GitHub Pages deployment..."
+    sleep 5
+    RUN_ID=""
+    for _ in {1..12}; do
+      RUN_ID="$(gh run list --repo "$REPO" --workflow pages-build-deployment --limit 1 --json databaseId --jq '.[0].databaseId // ""' 2>/dev/null || true)"
+      if [[ -n "$RUN_ID" ]]; then
+        break
+      fi
+      sleep 5
+    done
+
+    if [[ -n "$RUN_ID" ]]; then
+      gh run watch "$RUN_ID" --repo "$REPO" --exit-status
+      echo "GitHub Pages deployed successfully."
+    else
+      echo "Could not find the GitHub Pages deployment run. Check Actions manually."
+    fi
+  else
+    echo "Could not infer GitHub repo from origin URL. Check Pages deployment manually."
+  fi
+else
+  echo "gh was not found; check GitHub Pages deployment manually."
+fi
+
 echo "Site: https://xichie.github.io/"
