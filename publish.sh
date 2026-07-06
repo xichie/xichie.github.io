@@ -79,6 +79,7 @@ echo "Rebasing on origin/$BRANCH..."
 git pull --rebase origin "$BRANCH"
 
 echo "Pushing to origin/$BRANCH..."
+PAGES_RUN_AFTER="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
 git push origin "$BRANCH"
 
 echo "Pushed successfully."
@@ -87,19 +88,46 @@ if command -v gh >/dev/null 2>&1; then
   REPO="$(git config --get remote.origin.url | sed -E 's#^git@github.com:##; s#^https://github.com/##; s#\.git$##')"
   if [[ "$REPO" == */* ]]; then
     echo "Waiting for GitHub Pages deployment..."
+    HEAD_SHA="$(git rev-parse HEAD)"
+
+    find_pages_run() {
+      local after="$1"
+      local excluded_run_id="${2:-}"
+      local run_id=""
+
+      for _ in {1..12}; do
+        run_id="$(gh run list --repo "$REPO" --workflow pages-build-deployment --limit 10 \
+          --json databaseId,headSha,createdAt \
+          --jq "map(select(.headSha == \"$HEAD_SHA\" and .createdAt >= \"$after\" and (.databaseId|tostring) != \"$excluded_run_id\"))[0].databaseId // \"\"" 2>/dev/null || true)"
+        if [[ -n "$run_id" ]]; then
+          echo "$run_id"
+          return 0
+        fi
+        sleep 5
+      done
+
+      return 1
+    }
+
     sleep 5
-    RUN_ID=""
-    for _ in {1..12}; do
-      RUN_ID="$(gh run list --repo "$REPO" --workflow pages-build-deployment --limit 1 --json databaseId --jq '.[0].databaseId // ""' 2>/dev/null || true)"
-      if [[ -n "$RUN_ID" ]]; then
-        break
-      fi
-      sleep 5
-    done
+    RUN_ID="$(find_pages_run "$PAGES_RUN_AFTER" || true)"
 
     if [[ -n "$RUN_ID" ]]; then
-      gh run watch "$RUN_ID" --repo "$REPO" --exit-status
-      echo "GitHub Pages deployed successfully."
+      if gh run watch "$RUN_ID" --repo "$REPO" --exit-status; then
+        echo "GitHub Pages deployed successfully."
+      else
+        echo "GitHub Pages deployment failed; requesting one rebuild retry..."
+        RETRY_AFTER="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+        gh api -X POST "repos/$REPO/pages/builds" >/dev/null
+        RETRY_RUN_ID="$(find_pages_run "$RETRY_AFTER" "$RUN_ID" || true)"
+        if [[ -n "$RETRY_RUN_ID" ]]; then
+          gh run watch "$RETRY_RUN_ID" --repo "$REPO" --exit-status
+          echo "GitHub Pages deployed successfully after retry."
+        else
+          echo "Could not find the retry GitHub Pages deployment run. Check Actions manually."
+          exit 1
+        fi
+      fi
     else
       echo "Could not find the GitHub Pages deployment run. Check Actions manually."
     fi
