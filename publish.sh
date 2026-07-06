@@ -88,7 +88,6 @@ if command -v gh >/dev/null 2>&1; then
   REPO="$(git config --get remote.origin.url | sed -E 's#^git@github.com:##; s#^https://github.com/##; s#\.git$##')"
   if [[ "$REPO" == */* ]]; then
     echo "Waiting for GitHub Pages deployment..."
-    HEAD_SHA="$(git rev-parse HEAD)"
 
     find_pages_run() {
       local after="$1"
@@ -96,9 +95,8 @@ if command -v gh >/dev/null 2>&1; then
       local run_id=""
 
       for _ in {1..12}; do
-        run_id="$(gh run list --repo "$REPO" --workflow pages-build-deployment --limit 10 \
-          --json databaseId,headSha,createdAt \
-          --jq "map(select(.headSha == \"$HEAD_SHA\" and .createdAt >= \"$after\" and (.databaseId|tostring) != \"$excluded_run_id\"))[0].databaseId // \"\"" 2>/dev/null || true)"
+        run_id="$(gh api "repos/$REPO/actions/runs?per_page=20&exclude_pull_requests=true" \
+          --jq ".workflow_runs | map(select(.name == \"pages build and deployment\" and .created_at >= \"$after\" and (.id|tostring) != \"$excluded_run_id\"))[0].id // \"\"" 2>/dev/null || true)"
         if [[ -n "$run_id" ]]; then
           echo "$run_id"
           return 0
