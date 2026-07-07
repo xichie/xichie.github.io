@@ -59,7 +59,7 @@ Google Scholar citation statistics:
 
 #### 2025
 
-- `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Carol Fung, Yuchen Wang, Aibin Wang, Hongyu Zhang, Hailong Yang, Depei Qian. LogMoE: Lightweight Expert Mixture for Cross-System Log Anomaly Detection. *2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)*, pp. 330-341, 2025. 🏆 Distinguished Paper Award.<br>
+- `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Carol Fung, Yuchen Wang, Aibin Wang, Hongyu Zhang, Hailong Yang, Depei Qian. LogMoE: Lightweight Expert Mixture for Cross-System Log Anomaly Detection. *2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)*, pp. 330-341, 2025. **🏆 Distinguished Paper Award**.<br>
 [[Webpage]](https://ieeexplore.ieee.org/abstract/document/11334514/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:M3ejUd6NZC8C'></span>
 
 - `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Yao Lu, Hailong Yang, Depei Qian. LogReader: General-Purpose Log Analysis via Open-Source Large Language Models. *2025 International Joint Conference on Neural Networks (IJCNN)*, pp. 1-8, 2025.<br>
@@ -119,7 +119,7 @@ Google Scholar citation statistics:
 
 <span class='anchor' id='awards'></span>
 # Awards
-- 🏆 *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service.
+- 🏆  *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service. **(1/950)**
 <!-- - *YYYY.MM*, Award name, granting organization. -->
 
 <!-- <span class='anchor' id='talks'></span>
