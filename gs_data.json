@@ -1,0 +1,485 @@
+{
+  "name": "Jiaxing Qi",
+  "scholar_id": "-sLEDGMAAAAJ",
+  "updated": "2026-07-22T10:29:16.273332+00:00",
+  "publications": {
+    "-sLEDGMAAAAJ:zYLM7Y9cAGgC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Loggpt: Exploring chatgpt for log-based anomaly detection",
+        "author": "J Qi, S Huang, Z Luan, S Yang, C Fung, H Yang, D Qian, J Shang, Z Xiao, ...",
+        "citation": "2023 IEEE international conference on high performance computing … , 2023",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:zYLM7Y9cAGgC",
+      "num_citations": 186
+    },
+    "-sLEDGMAAAAJ:YsMSGLbcyi4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Fdlora: Personalized federated learning of large language model via dual lora tuning",
+        "author": "Y Lu, J Qi, Z Luan, S Huang, C Fung, H Yang, D Qian",
+        "citation": "arXiv preprint arXiv:2406.07925 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:YsMSGLbcyi4C",
+      "num_citations": 78
+    },
+    "-sLEDGMAAAAJ:qjMakFHDy7sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Logencoder: Log-based contrastive representation learning for anomaly detection",
+        "author": "J Qi, Z Luan, S Huang, C Fung, H Yang, H Li, D Zhu, D Qian",
+        "citation": "IEEE Transactions on Network and Service Management 20 (2), 1378-1391 , 2023",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:qjMakFHDy7sC",
+      "num_citations": 75
+    },
+    "-sLEDGMAAAAJ:9yKSN-GCB0IC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Binary imbalanced data classification based on diversity oversampling by generative models",
+        "author": "J Zhai, J Qi, C Shen",
+        "citation": "Information Sciences 585, 313-343 , 2022",
+        "pub_year": "2022"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:9yKSN-GCB0IC",
+      "num_citations": 71
+    },
+    "-sLEDGMAAAAJ:u5HHmVD_uO8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Imbalanced data classification based on diverse sample generation and classifier fusion",
+        "author": "J Zhai, J Qi, S Zhang",
+        "citation": "International Journal of Machine Learning and Cybernetics 13 (3), 735-750 , 2022",
+        "pub_year": "2022"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:u5HHmVD_uO8C",
+      "num_citations": 32
+    },
+    "-sLEDGMAAAAJ:UeHWp8X0CEIC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Adanomaly: adaptive anomaly detection for system logs with adversarial learning",
+        "author": "J Qi, Z Luan, S Huang, Y Wang, C Fung, H Yang, D Qian",
+        "citation": "NOMS 2022-2022 IEEE/IFIP Network Operations and Management Symposium, 1-5 , 2022",
+        "pub_year": "2022"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:UeHWp8X0CEIC",
+      "num_citations": 30
+    },
+    "-sLEDGMAAAAJ:hqOjcs7Dif8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Mmgdreamer: Mixed-modality graph for geometry-controllable 3d indoor scene generation",
+        "author": "Z Yang, K Lu, C Zhang, J Qi, H Jiang, R Ma, S Yin, Y Xu, M Xing, Z Xiao, ...",
+        "citation": "Proceedings of the AAAI Conference on Artificial Intelligence 39 (9), 9391-9399 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:hqOjcs7Dif8C",
+      "num_citations": 26
+    },
+    "-sLEDGMAAAAJ:d1gkVwhDpl0C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "An instance selection algorithm for fuzzy K -nearest neighbor",
+        "author": "J Zhai, J Qi, S Zhang",
+        "citation": "Journal of Intelligent & Fuzzy Systems 40 (1), 521-533 , 2021",
+        "pub_year": "2021"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:d1gkVwhDpl0C",
+      "num_citations": 26
+    },
+    "-sLEDGMAAAAJ:2osOgNQ5qMEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Logqa: Question answering in unstructured logs",
+        "author": "S Huang, Y Liu, C Fung, J Qi, H Yang, Z Luan",
+        "citation": "arXiv preprint arXiv:2303.11715 , 2023",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:2osOgNQ5qMEC",
+      "num_citations": 16
+    },
+    "-sLEDGMAAAAJ:Y0pCki6q_DkC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "SpikeLog: Log-based anomaly detection via potential-assisted spiking neuron network",
+        "author": "J Qi, Z Luan, S Huang, C Fung, H Yang, D Qian",
+        "citation": "IEEE Transactions on Knowledge and Data Engineering 36 (12), 9322-9335 , 2023",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:Y0pCki6q_DkC",
+      "num_citations": 14
+    },
+    "-sLEDGMAAAAJ:_FxGoFyzp5QC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Automated information extraction model enhancing traditional Chinese Medicine RCT evidence extraction (Evi-BERT): Algorithm Development and Validation",
+        "author": "Y Li, Z Luan, Y Liu, H Liu, J Qi, D Han",
+        "citation": "Frontiers in Artificial Intelligence 7, 1454945 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:_FxGoFyzp5QC",
+      "num_citations": 13
+    },
+    "-sLEDGMAAAAJ:Se3iqnhoufwC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Exploring the comprehension of ChatGPT in traditional Chinese medicine knowledge",
+        "author": "L Yizhen, H Shaohan, Q Jiaxing, Q Lei, H Dongran, L Zhongzhi",
+        "citation": "arXiv preprint arXiv:2403.09164 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:Se3iqnhoufwC",
+      "num_citations": 12
+    },
+    "-sLEDGMAAAAJ:LkGwnXOMwfcC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "BiATNovo: a self-attention based bidirectional peptide sequencing method",
+        "author": "S Wu, Z Luan, Z Fu, Q Wang, T Guo",
+        "citation": "bioRxiv, 2023-05 , 2023",
+        "pub_year": "2023"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:LkGwnXOMwfcC",
+      "num_citations": 12
+    },
+    "-sLEDGMAAAAJ:ufrVoPGSRksC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Elasticbatch: a learning-augmented elastic scheduling system for batch inference on mig",
+        "author": "J Qi, W Xiao, M Li, C Yang, Y Li, W Lin, H Yang, Z Luan, D Qian",
+        "citation": "IEEE Transactions on Parallel and Distributed Systems 35 (10), 1708-1720 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:ufrVoPGSRksC",
+      "num_citations": 10
+    },
+    "-sLEDGMAAAAJ:KlAtU1dfN6UC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Spatial 3D-LLM: exploring spatial awareness in 3D vision-language models",
+        "author": "X Wang, Z Li, Y Xu, J Qi, Z Yang, R Ma, X Liu, C Zhang",
+        "citation": "2025 IEEE International Conference on Multimedia and Expo (ICME), 1-6 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:KlAtU1dfN6UC",
+      "num_citations": 8
+    },
+    "-sLEDGMAAAAJ:WF5omc3nYNoC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Gloss: Guiding large language models to answer questions from system logs",
+        "author": "S Huang, Y Liu, J Qi, J Shang, Z Xiao, C Fung, Z Wu, H Yang, Z Luan, ...",
+        "citation": "2024 IEEE International Conference on Software Analysis, Evolution and … , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:WF5omc3nYNoC",
+      "num_citations": 8
+    },
+    "-sLEDGMAAAAJ:u-x6o8ySG0sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Binary imbalanced data classification based on modified D2GAN oversampling and classifier fusion",
+        "author": "J Zhai, J Qi, S Zhang",
+        "citation": "IEEE Access 8, 169456-169469 , 2020",
+        "pub_year": "2020"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:u-x6o8ySG0sC",
+      "num_citations": 8
+    },
+    "-sLEDGMAAAAJ:UebtZRa9Y70C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Beyond window-based detection: A graph-centric framework for discrete log anomaly detection",
+        "author": "J Qi, C Zeng, Z Luan, S Huang, S Yang, Y Lu, H Yang, D Qian",
+        "citation": "arXiv preprint arXiv:2501.12166 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:UebtZRa9Y70C",
+      "num_citations": 3
+    },
+    "-sLEDGMAAAAJ:YOwf2qJgpHMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "CTSG: Integrating Context and Way Topology Into Scene Graph for Zero-shot Navigation",
+        "author": "R Ma, Y Xu, Y Li, Y Fang, Z Yang, J Qi, X Zhao, C Zhang",
+        "citation": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems … , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:YOwf2qJgpHMC",
+      "num_citations": 2
+    },
+    "-sLEDGMAAAAJ:4TOpqqG69KYC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "LogReader: General-Purpose Log Analysis via Open-Source Large Language Models",
+        "author": "J Qi, Z Luan, S Huang, Y Lu, H Yang, D Qian",
+        "citation": "2025 International Joint Conference on Neural Networks (IJCNN), 1-8 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:4TOpqqG69KYC",
+      "num_citations": 2
+    },
+    "-sLEDGMAAAAJ:roLk4NBRz8UC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Quantum Machine Learning in Log-based Anomaly Detection: Challenges and Opportunities",
+        "author": "J Qi, C Zeng, Z Luan, S Huang, S Yang, Y Lu, B Han, H Yang, D Qian",
+        "citation": "arXiv preprint arXiv:2412.13529 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:roLk4NBRz8UC",
+      "num_citations": 2
+    },
+    "-sLEDGMAAAAJ:W7OEmFMy1HYC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "LogSay: An Efficient Comprehension System for Log Numerical Reasoning",
+        "author": "J Qi, Z Luan, S Huang, C Fung, H Yang",
+        "citation": "IEEE Transactions on Computers 73 (7), 1809-1821 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:W7OEmFMy1HYC",
+      "num_citations": 2
+    },
+    "-sLEDGMAAAAJ:3fE2CSJIrl8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Comparative study on big data extreme learning machines under MapReduce and Spark frameworks",
+        "author": "D SONG, J ZHAI, Y LI, J QI",
+        "citation": "Journal of Chinese Computer Systems 41 (7), 1381-1388 , 2020",
+        "pub_year": "2020"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:3fE2CSJIrl8C",
+      "num_citations": 2
+    },
+    "-sLEDGMAAAAJ:qxL8FJ1GzNcC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Evaluating Large‐Scale and Lightweight Large Language Models for Traditional Chinese Medicine Exam Questions: A Comparative Study",
+        "author": "Y Li, S Huang, J Qi, Y Lu, L Quan, D Han, B Li, X Liu, Z Luan",
+        "citation": "Journal of Evidence‐Based Medicine 19 (1), e70118 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:qxL8FJ1GzNcC",
+      "num_citations": 1
+    },
+    "-sLEDGMAAAAJ:M3ejUd6NZC8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "LogMoE: Lightweight Expert Mixture for Cross-System Log Anomaly Detection",
+        "author": "J Qi, Z Luan, S Huang, C Fung, Y Wang, A Wang, H Zhang, H Yang, ...",
+        "citation": "2025 40th IEEE/ACM International Conference on Automated Software … , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:M3ejUd6NZC8C",
+      "num_citations": 1
+    },
+    "-sLEDGMAAAAJ:Zph67rFs4hoC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "BridgeGLM: Bridging Graph and Language Spaces for Domain Generalization",
+        "author": "J Qi, Y Xu, Z Yang, R Ma, C Zhang, K Yu",
+        "citation": "Proceedings of the 33rd ACM International Conference on Multimedia, 1258-1267 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:Zph67rFs4hoC",
+      "num_citations": 1
+    },
+    "-sLEDGMAAAAJ:7PzlFSSx8tAC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Can LLMs Really Recover Microservice Failures? A Recovery-Aware Evaluation of Diagnosis-to-Action Reasoning",
+        "author": "J Qi, Z Luan, H Zhang, S Huang, C Fung, Y Tong, H Yang, D Qian",
+        "citation": "arXiv preprint arXiv:2607.04623 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:7PzlFSSx8tAC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:dhFuZR0502QC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "RATrain: A Resource-Aware Training Runtime for Large Language Models on Bandwidth-Constrained Heterogeneous Supercomputing Platforms",
+        "author": "Y Lu, S Ma, Z Luan, G Li, J Qi, B Han, H Yang, D Qian",
+        "citation": "arXiv preprint arXiv:2606.10415 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:dhFuZR0502QC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:mVmsd5A6BfQC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Bandwidth-Aware LLM Inference on Heterogeneous Many-Core Supercomputers",
+        "author": "Y Lu, Z Luan, G Li, J Qi, S Ma, B Han, S Shang, H Yang, D Qian",
+        "citation": "arXiv preprint arXiv:2605.25655 , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:mVmsd5A6BfQC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:9ZlFYXVOiuMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "MotionEnhancer: Leveraging Video Diffusion for Motion-Enhanced Vision-Language Models",
+        "author": "Y Xu, C Zhang, R Ma, F Gao, Z Yang, J Qi, Z Chen",
+        "citation": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern … , 2026",
+        "pub_year": "2026"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:9ZlFYXVOiuMC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:aqlVkmm33-oC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "面向迈创 3000 异构处理器的多头注意力机制多重并行优化",
+        "author": "Y Lu, ZZ Luan, G Li, JX Qi, B Han, HL Yang, DP Qian",
+        "citation": "Jisuanji Xuebao/Chinese Journal of Computers 48 (9), 2049-2063 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:aqlVkmm33-oC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:_kc_bZDykSQC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Learning to Follow Domain-specific Instruction with Verifiable Rewards",
+        "author": "S Huang, Y Liu, J Qi, H Yang, Z Luan, D Qian",
+        "citation": "2025 International Joint Conference on Neural Networks (IJCNN), 1-8 , 2025",
+        "pub_year": "2025"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:_kc_bZDykSQC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:kNdYIx-mwKoC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Log Analysis with Interpretability and Usability",
+        "author": "J Qi",
+        "citation": "International Conference on Service-Oriented Computing, 208-213 , 2024",
+        "pub_year": "2024"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:kNdYIx-mwKoC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:IjCSPb-OGe4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Comparative study of big data active learning based on MapReduce and Spark",
+        "author": "J ZHAI, J QI, C SHEN, D SONG, M WANG, S TIAN",
+        "citation": "Computer Engineering & Science 41 (10), 1715 , 2019",
+        "pub_year": "2019"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:IjCSPb-OGe4C",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:ULOm3_A8WrAC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Spatial 3D-LLM: Progressive Spatial Awareness for Advanced 3D Vision-Language Understanding",
+        "author": "X Wang, Z Li, Y Xu, J Qi, Z Yang, R Ma, X Liu, C Zhang"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:ULOm3_A8WrAC",
+      "num_citations": 0
+    },
+    "-sLEDGMAAAAJ:Tyk-4Ss8FVUC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Evi-BERT: Adopting Bert and Bidirectional LSTM-CRF for TCM RCT Evidence Extraction",
+        "author": "Y Li, Y Liu, H Liu, J Qi, D Han, Z Luan",
+        "citation": "Available at SSRN 4576605 , 0"
+      },
+      "filled": false,
+      "author_pub_id": "-sLEDGMAAAAJ:Tyk-4Ss8FVUC",
+      "num_citations": 0
+    }
+  },
+  "cites_per_year": {
+    "2022": 22,
+    "2023": 58,
+    "2024": 101,
+    "2025": 279,
+    "2026": 179
+  },
+  "citedby": 641,
+  "citedby5y": 641,
+  "hindex": 12,
+  "hindex5y": 12,
+  "i10index": 14,
+  "i10index5y": 14
+}
