@@ -118,9 +118,9 @@ Google Scholar citation statistics:
 
 
 <span class='anchor' id='awards'></span>
-# Awards
-- 🏆  *July 2026*, The Postdoctoral Fellowship Program (Grade B) of China Postdoctoral Science Foundation.
-- 🏆  *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service. **(1/950)**
+# Awards 🏆
+- *July 2026*, The Postdoctoral Fellowship Program (Grade B) of China Postdoctoral Science Foundation (Annual quota: 1,000 awardees nationwide).
+- *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service. **(1/950)**
 <!-- - *YYYY.MM*, Award name, granting organization. -->
 
 <!-- <span class='anchor' id='talks'></span>
