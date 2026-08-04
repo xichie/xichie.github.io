@@ -20,7 +20,7 @@ redirect_from:
 
 # About Me
 
-I am a **postdoctoral researcher at Beihang University**, working with **Prof. Yongxin Tong**. I received my Ph.D. degree from **Beihang University** in **2026**, advised by **Prof. Zhongzhi Luan**.
+I am a **postdoctoral researcher at Beihang University**, working with **[Prof. Yongxin Tong](https://yongxintong.github.io/)**. I received my Ph.D. degree from **Beihang University** in **2026**, advised by **Prof. Zhongzhi Luan**.
 
 
 My research interests span artificial intelligence for software engineering, AI-assisted biological data analysis, and AI-enabled system management. I am particularly interested in building practical AI methods that can support automated software engineering workflows, help biologists analyze proteomics data more efficiently, and improve the reliability and observability of modern computing systems.
@@ -45,7 +45,7 @@ Google Scholar citation statistics:
 <a href='{{ scholar_url }}'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=Citations"></a>
 {% endif %}
 
-### Journal and Conference Publications
+### Selected Publications <small><a href="{{ scholar_url }}">View all</a></small>
 
 <sup>†</sup> Corresponding author.
 
@@ -59,7 +59,7 @@ Google Scholar citation statistics:
 
 #### 2025
 
-- `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Carol Fung, Yuchen Wang, Aibin Wang, Hongyu Zhang, Hailong Yang, Depei Qian. LogMoE: Lightweight Expert Mixture for Cross-System Log Anomaly Detection. *2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)*, pp. 330-341, 2025. 🏆 Distinguished Paper Award.<br>
+- `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Carol Fung, Yuchen Wang, Aibin Wang, Hongyu Zhang, Hailong Yang, Depei Qian. LogMoE: Lightweight Expert Mixture for Cross-System Log Anomaly Detection. *2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)*, pp. 330-341, 2025. **🏆 Distinguished Paper Award**.<br>
 [[Webpage]](https://ieeexplore.ieee.org/abstract/document/11334514/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:M3ejUd6NZC8C'></span>
 
 - `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Yao Lu, Hailong Yang, Depei Qian. LogReader: General-Purpose Log Analysis via Open-Source Large Language Models. *2025 International Joint Conference on Neural Networks (IJCNN)*, pp. 1-8, 2025.<br>
@@ -111,48 +111,17 @@ Google Scholar citation statistics:
 - `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Carol Fung, Hailong Yang, Depei Qian. SpikeLog: Log-Based Anomaly Detection via Potential-Assisted Spiking Neuron Network. *IEEE Transactions on Knowledge and Data Engineering*, 36(12): 9322-9335, 2023.<br>
 [[Webpage]](https://ieeexplore.ieee.org/abstract/document/10375739/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:Y0pCki6q_DkC'></span>
 
-#### 2022
-
-- Junhai Zhai, `Jiaxing Qi`, Chu Shen. Binary Imbalanced Data Classification Based on Diversity Oversampling by Generative Models. *Information Sciences*, 585: 313-343, 2022.<br>
-[[Webpage]](https://www.sciencedirect.com/science/article/pii/S0020025521011804) <span class='show_paper_citations' data='-sLEDGMAAAAJ:9yKSN-GCB0IC'></span>
-
-- Junhai Zhai, `Jiaxing Qi`, Sufang Zhang. Imbalanced Data Classification Based on Diverse Sample Generation and Classifier Fusion. *International Journal of Machine Learning and Cybernetics*, 13(3): 735-750, 2022.<br>
-[[Webpage]](https://link.springer.com/article/10.1007/s13042-021-01321-9) <span class='show_paper_citations' data='-sLEDGMAAAAJ:u5HHmVD_uO8C'></span>
-
-- `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Shaohan Huang, Yukun Wang, Carol Fung, Hailong Yang, Depei Qian. AdaAnomaly: Adaptive Anomaly Detection for System Logs with Adversarial Learning. *NOMS 2022 - 2022 IEEE/IFIP Network Operations and Management Symposium*, pp. 1-5, 2022.<br>
-[[Webpage]](https://ieeexplore.ieee.org/abstract/document/9789917/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:UeHWp8X0CEIC'></span>
-
-#### 2021
-
-- Junhai Zhai, `Jiaxing Qi`, Sufang Zhang. An Instance Selection Algorithm for Fuzzy K-Nearest Neighbor. *Journal of Intelligent & Fuzzy Systems*, 40(1): 521-533, 2021.<br>
-[[Webpage]](https://journals.sagepub.com/doi/abs/10.3233/JIFS-200124) <span class='show_paper_citations' data='-sLEDGMAAAAJ:d1gkVwhDpl0C'></span>
-
-#### 2020
-
-- Junhai Zhai, `Jiaxing Qi`, Sufang Zhang. Binary Imbalanced Data Classification Based on Modified D2GAN Oversampling and Classifier Fusion. *IEEE Access*, 8: 169456-169469, 2020.<br>
-[[Webpage]](https://ieeexplore.ieee.org/abstract/document/9195865/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:u-x6o8ySG0sC'></span>
-
-- Dandan Song, Junhai Zhai, Yan Li, `Jiaxing Qi`. Comparative Study on Big Data Extreme Learning Machines Under MapReduce and Spark Frameworks. *Journal of Chinese Computer Systems*, 41(7): 1381-1388, 2020.<br>
-[[Webpage]](http://xwxt.sict.ac.cn/EN/abstract/abstract5460.shtml) <span class='show_paper_citations' data='-sLEDGMAAAAJ:3fE2CSJIrl8C'></span>
-
-#### 2019
-
-- Junhai Zhai, `Jiaxing Qi`, Chu Shen, Dandan Song, Mohan Wang, Shi Tian. Comparative Study of Big Data Active Learning Based on MapReduce and Spark. *Computer Engineering & Science*, 41(10): 1715, 2019.<br>
-[[Webpage]](https://scholar.google.com/scholar?cluster=3773853539799613889&hl=en&oi=scholarr) <span class='show_paper_citations' data='-sLEDGMAAAAJ:IjCSPb-OGe4C'></span>
-
-<!-- <span class='anchor' id='projects'></span>
+<span class='anchor' id='projects'></span>
 
 # Projects
+- *2023 - 2024*, The Academic Excellence Foundation of BUAA for PhD Students.
 
-- *YYYY - YYYY*, Project title, your role. Briefly describe the goal, method, and your contribution.
-- *YYYY - YYYY*, Project title, your role. Briefly describe the goal, method, and your contribution.
 
-<span class='anchor' id='awards'></span> -->
-
-<!-- # Awards
-
-- *YYYY.MM*, Award name, granting organization.
-- *YYYY.MM*, Award name, granting organization. -->
+<span class='anchor' id='awards'></span>
+# Awards 🏆
+- *July 2026*, The Postdoctoral Fellowship Program (Grade B) of China Postdoctoral Science Foundation (Annual quota: 1,000 awardees nationwide).
+- *April 2025*, 1st WWW 2025 Competition Track SmartMem: Memory Failure Prediction for Reliable Cloud Service. **(1/950)**
+<!-- - *YYYY.MM*, Award name, granting organization. -->
 
 <!-- <span class='anchor' id='talks'></span>
 
@@ -162,7 +131,6 @@ Google Scholar citation statistics:
 - *YYYY.MM*, Talk or conference title, location, presentation type. -->
 
 <span class='anchor' id='experience'></span>
-
 # Experience
 - *April 2026 - Present*, Postdoctoral Researcher, Beihang University, working with Prof. Yongxin Tong.
 - *April 2024 - Dec 2025*, Research Intern, Beijing Digital Native Digital City Research Center.

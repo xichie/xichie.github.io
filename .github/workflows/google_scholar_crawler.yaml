@@ -1,13 +1,17 @@
 name: Get Citation Data
 
 on:
- push:
-  branches:
-   - main
-   - master
- schedule:
-  - cron:  '0 8 * * *'
- workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: google-scholar-crawler
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -16,22 +20,32 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v4
-    - name: Install Reqs
-      run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
-      run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
-        git init
-        git config --local user.name "${GITHUB_ACTOR}"
-        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-        git add *.json
-        git commit -m "Updated Citation Data"
-        git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env: 
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+      - uses: actions/checkout@v4
+      - name: Install Reqs
+        run: |
+          sudo apt-get install -y python3-setuptools
+      - name: Run
+        run: |
+          cd ./google_scholar_crawler
+          pip3 install -r requirements.txt
+          if ! timeout 120s python3 main.py; then
+            echo "::warning::Google Scholar fetch failed; reusing last successful citation data."
+            cd ..
+            mkdir -p ./google_scholar_crawler/results
+            git fetch origin google-scholar-stats --depth=1
+            git show origin/google-scholar-stats:gs_data.json > ./google_scholar_crawler/results/gs_data.json
+            git show origin/google-scholar-stats:gs_data_shieldsio.json > ./google_scholar_crawler/results/gs_data_shieldsio.json
+            cd ./google_scholar_crawler
+          fi
+          cd ./results
+          git init
+          git config --local user.name "${GITHUB_ACTOR}"
+          git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git add *.json
+          git commit -m "Updated Citation Data"
+          git push "${remote_repo}" HEAD:google-scholar-stats --force
+        env:
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
