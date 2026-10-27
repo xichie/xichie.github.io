@@ -51,6 +51,12 @@ Google Scholar citation statistics:
 
 #### 2026
 
+- Yao Lu, Zhongzhi Luan<sup>†</sup>, Gen Li, `Jiaxing Qi`, Shiqing Ma, Bin Han, Rui Wang, Hailong Yang, Depei Qian. USIR: A Unified Sparse Inference Runtime for Large Language Models on MT-3000 Many-Core Accelerators. *2026 IEEE International Conference on Cluster Computing (CLUSTER)*, pp. 74-86, 2026.<br>
+[[Webpage]](https://ieeexplore.ieee.org/abstract/document/11728369/) <span class='show_paper_citations' data='-sLEDGMAAAAJ:IWHjjKOFINEC'></span>
+
+- Wentao Feng, Shaowen Li, Ziyi Song, Shizhe Shang, Kuiying Ban, Zhongyu Yu, `Jiaxing Qi`, Zhongzhi Luan<sup>†</sup>, Hailong Yang, Depei Qian. MemBridge: Bridging the Static-Dynamic Semantic Gap in Memory Profiling via Variable-Centric Instrumentation. *Euro-Par 2026: Parallel Processing, Lecture Notes in Computer Science*, vol. 16781, pp. 62-76, 2026.<br>
+[[Webpage]](https://link.springer.com/chapter/10.1007/978-3-032-35248-4_5) <span class='show_paper_citations' data='-sLEDGMAAAAJ:ZeXyd9-uunAC'></span>
+
 - Yizhen Li, Shaohan Huang, `Jiaxing Qi`, Yao Lu, Lei Quan, Dongran Han, Bin Li, Xincan Liu, Zhongzhi Luan<sup>†</sup>. Evaluating Large-Scale and Lightweight Large Language Models for Traditional Chinese Medicine Exam Questions: A Comparative Study. *Journal of Evidence-Based Medicine*, 19(1): e70118, 2026.<br>
 [[Webpage]](https://onlinelibrary.wiley.com/doi/abs/10.1111/jebm.70118) <span class='show_paper_citations' data='-sLEDGMAAAAJ:qxL8FJ1GzNcC'></span>
 
